@@ -22,6 +22,10 @@ public class Keywords {
         return keywords.containsKey(value);
     }
 
+    public boolean isComposite(String value) {
+        return keywords.get(value);
+    }
+
     private void initializeKeywords() throws IOException {
         keywordsList = new ArrayList<String>();
         String keyword;

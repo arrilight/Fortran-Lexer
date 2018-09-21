@@ -17,8 +17,8 @@ public class Reader {
     }
 
     public String nextLine() {
-        if (scanner.hasNextLine()) {
-            String line = scanner.nextLine();
+        String line;
+        if (scanner.hasNextLine() && (line = scanner.nextLine()).length() >= 6) {
             if (line.charAt(5) == ' ') {
                 prLine = line;
                 return line;
@@ -26,8 +26,10 @@ public class Reader {
                 prLine += line.substring(6, line.length());
                 return prLine;
             }
-        } else
+        }
+        if (!hasNextLine())
             return null;
+        return "";
 
     }
 

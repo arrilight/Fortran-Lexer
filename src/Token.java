@@ -1,7 +1,4 @@
 public class Token {
-    public enum TokenType {
-        IDENTIFIER, KEYWORD, SEPARATOR, OPERATOR, LITERAL, LABEL
-    }
     private TokenType type;
     private String value;
 

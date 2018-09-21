@@ -1,0 +1,29 @@
+10    program main
+      implicit none
+
+      call timestamp ( )
+
+      write ( *, '(a)' ) ' '
+      write ( *, '(a)' ) 'HELLO:'
+      write ( *, '(a)' ) '  FORTRAN77 version'
+      write ( *, '(a)' ) '  This is how to say:'
+      write ( *, '(a)' ) ' '
+      write ( *, '(a)' ) '  Hello, world!'
+
+      write ( *, '(a)' ) ' '
+      call timestamp ( )
+
+      stop
+      end
+      subroutine timestamp ( )
+      implicit none
+
+      character ( len = 8 ) date
+      character ( len = 10 ) time
+
+      call date_and_time ( date, time )
+
+      write ( *, '(a8,2x,a10)' ) date, time
+
+      return
+      end
