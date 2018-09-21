@@ -28,6 +28,7 @@ public class Keywords {
 
     private void initializeKeywords() throws IOException {
         keywordsList = new ArrayList<String>();
+        keywords = new HashMap<>();
         String keyword;
         BufferedReader reader = new BufferedReader(new FileReader("keywords.txt"));
         while ((keyword = reader.readLine()) != null) {
