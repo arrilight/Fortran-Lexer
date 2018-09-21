@@ -27,4 +27,12 @@ public class Writer {
             e.printStackTrace();
         }
     }
+
+    public void writeEmptyLine() {
+        try (FileWriter fw = new FileWriter(this.filename, true)) {
+            fw.write("\n");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

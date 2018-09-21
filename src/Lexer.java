@@ -21,6 +21,7 @@ public class Lexer {
                 }
 
             }
+            writer.writeEmptyLine();
         }
 
     }
@@ -41,6 +42,10 @@ public class Lexer {
                 return keyword;
             }
         }
+//        Token result;
+//        if ((result = findOperator()) != null) {
+//            return result;
+//        }
         pointer = line.length();
 
         return null;
@@ -64,7 +69,7 @@ public class Lexer {
 
     private Token findKeywordOrIdentifier(String line) {
         StringBuilder word = new StringBuilder();
-        while(pointer < line.length() && Character.isLetter(line.charAt(pointer))) {
+        while(pointer < line.length() && line.charAt(pointer) != ' ') {
             word.append(line.charAt(pointer));
             pointer++;
         }
@@ -79,5 +84,38 @@ public class Lexer {
         pointer = line.length();
         return null;
 
+    }
+
+    private Token findOperator(String line) {
+        int lenght = line.length();
+        int p = pointer;
+        if (p < lenght) {
+            switch(line.charAt(p)) {
+                case '=':
+                    if (p < lenght + 1 && line.charAt(p + 1) == '=') {
+                        pointer+=2;
+                        return new Token(TokenType.OPERATOR, "COND_EQUAL");
+                    }
+                    pointer++;
+                    return new Token(TokenType.OPERATOR, "EQUAL");
+                case '>':
+                    if (p < lenght + 1 && line.charAt(p + 1) == '=') {
+                        pointer+=2;
+                        return new Token(TokenType.OPERATOR, "BIGGER_OR_EQ");
+                    }
+                    pointer++;
+                    return new Token(TokenType.OPERATOR, "BIGGER");
+                case '<':
+                    if (p < lenght + 1 && line.charAt(p + 1) == '=') {
+                        pointer+=2;
+                        return new Token(TokenType.OPERATOR, "LESS_OR_EQ");
+                    }
+                    pointer++;
+                    return new Token(TokenType.OPERATOR, "LESS");
+
+
+            }
+        }
+        return null;
     }
 }
