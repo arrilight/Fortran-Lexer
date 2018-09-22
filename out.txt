@@ -1,0 +1,129 @@
+Type: LABEL; value: 10;
+Type: KEYWORD; value: program;
+Type: IDENTIFIER; value: main;
+
+Type: KEYWORD; value: implicit;
+Type: KEYWORD; value: none;
+
+
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: timestamp;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: OPERATOR; value: RIGHT_PAREN;
+
+
+Type: KEYWORD; value: write;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: OPERATOR; value: ASTERISK;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: '(a)';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: LITERAL; value: ' ';
+
+Type: KEYWORD; value: write;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: OPERATOR; value: ASTERISK;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: '(a)';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: LITERAL; value: 'HELLO:';
+
+Type: KEYWORD; value: write;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: OPERATOR; value: ASTERISK;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: '(a)';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: LITERAL; value: '  FORTRAN77 version';
+
+Type: KEYWORD; value: write;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: OPERATOR; value: ASTERISK;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: '(a)';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: LITERAL; value: '  This is how to say:';
+
+Type: KEYWORD; value: write;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: OPERATOR; value: ASTERISK;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: '(a)';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: LITERAL; value: ' ';
+
+Type: KEYWORD; value: write;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: OPERATOR; value: ASTERISK;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: '(a)';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: LITERAL; value: '  Hello, world!';
+
+
+Type: KEYWORD; value: write;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: OPERATOR; value: ASTERISK;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: '(a)';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: LITERAL; value: ' ';
+
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: timestamp;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: OPERATOR; value: RIGHT_PAREN;
+
+
+Type: KEYWORD; value: stop;
+
+Type: KEYWORD; value: end;
+
+Type: KEYWORD; value: subroutine;
+Type: IDENTIFIER; value: timestamp;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: OPERATOR; value: RIGHT_PAREN;
+
+Type: KEYWORD; value: implicit;
+Type: KEYWORD; value: none;
+
+
+Type: KEYWORD; value: character;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: len;
+Type: OPERATOR; value: EQUAL;
+Type: LITERAL; value: 8.5;
+Type: OPERATOR; value: RIGHT_PAREN;
+
+Type: KEYWORD; value: character;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: len;
+Type: OPERATOR; value: EQUAL;
+Type: LITERAL; value: 10;
+Type: OPERATOR; value: RIGHT_PAREN;
+
+
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: date_and_time;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: date;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: time;
+Type: OPERATOR; value: RIGHT_PAREN;
+
+
+Type: KEYWORD; value: write;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: OPERATOR; value: ASTERISK;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: '(a8,2x,a10)';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: IDENTIFIER; value: date;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: time;
+
+
+Type: KEYWORD; value: return;
+
+Type: KEYWORD; value: end;
+

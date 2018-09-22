@@ -231,7 +231,8 @@ public class Lexer {
         int p = pointer;
         int length = line.length();
         StringBuilder literal = new StringBuilder();
-        while (p < length && Character.isDigit(line.charAt(p))) {
+        while (p < length && (Character.isDigit(line.charAt(p))
+        || line.charAt(p) == '.')) {
             literal.append(line.charAt(p));
             p++;
         }
