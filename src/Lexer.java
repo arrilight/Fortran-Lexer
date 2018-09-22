@@ -136,9 +136,15 @@ public class Lexer {
         if (p < length) {
             switch(line.charAt(p)) {
                 case '=':
-                    if (p < length + 1 && line.charAt(p + 1) == '=') {
-                        pointer+=2;
-                        return new Token(TokenType.OPERATOR, "COND_EQUAL");
+                    if (p < length + 1) {
+                        if (line.charAt(p + 1) == '=') {
+                            pointer+=2;
+                            return new Token(TokenType.OPERATOR, "COND_EQUAL");
+                        }
+                        if (line.charAt(p + 1) == '>') {
+                            pointer+=2;
+                            return new Token(TokenType.OPERATOR, "POINTER");
+                        }
                     }
                     pointer++;
                     return new Token(TokenType.OPERATOR, "EQUAL");
