@@ -37,19 +37,11 @@ public class Lexer {
             pointer = line.length();
             return null;
         }
-        if (pointer <= 5) {
-            Token label;
-            if ((label = findLabel()) != null) {
-                return label;
-            }
-            if (line.charAt(5) == '&') {
-                pointer++;
-                return new Token(TokenType.OPERATOR, "CONCAT");
-            }
-        }
-        while (line.charAt(pointer) == ' ') {
+        while (pointer < line.length() && line.charAt(pointer) == ' ') {
             pointer++;
         }
+        if (pointer == line.length())
+            return null;
         if (Character.isLetter(line.charAt(pointer))) {
             Token keyword;
             if ((keyword = findKeywordOrIdentifier()) != null) {
@@ -67,21 +59,6 @@ public class Lexer {
 
         return null;
 
-    }
-
-    private Token findLabel() {
-        StringBuilder label = new StringBuilder();
-        for (int i = pointer; i < 5; i++) {
-            int num = Character.getNumericValue(line.charAt(i));
-            if (num >= 0 && num <= 9) {
-                label.append(line.charAt(i));
-            }
-        }
-        pointer = 5;
-        if (!label.toString().equals("")) {
-            return new Token(TokenType.LABEL, label.toString());
-        }
-        return null;
     }
 
     private Token findKeywordOrIdentifier() {
@@ -138,6 +115,16 @@ public class Lexer {
                     lower.substring(p, p + 2).equals("to")) {
                 pointer = p + 2;
                 return new Token(TokenType.KEYWORD, "GO_TO");
+            }
+        }
+        if (word.equals("end")) {
+            p++;
+            while (line.charAt(p) == ' ')
+                p++;
+            if (p + 1 < line.length() &&
+                    lower.substring(p, p + 2).equals("do")) {
+                pointer = p + 2;
+                return new Token(TokenType.KEYWORD, "END_DO");
             }
         }
         return null;
@@ -207,6 +194,10 @@ public class Lexer {
                     pointer++;
                     return new Token(TokenType.OPERATOR, "DOLLAR_DELIMITER");
                 case ':':
+                    if (p + 1 < length && line.charAt(p + 1) ==':') {
+                        pointer+=2;
+                        return new Token(TokenType.OPERATOR, "TYPE_ASSIGNMENT");
+                    }
                     pointer++;
                     return new Token(TokenType.OPERATOR, "COLUMN_DELIMITER");
                 case '%':
