@@ -176,16 +176,12 @@ public class Lexer {
                     pointer++;
                     return new Token(TokenType.OPERATOR, "RIGHT_PAREN");
                 case '*':
-                    if (p - 1 > 0 && findLeftParen()) {
-                        pointer++;
-                        return new Token(TokenType.OPERATOR, "ASTERISK");
-                    }
-                    else if (p + 1 < length && line.charAt(p + 1) == '*') {
+                    if (p + 1 < length && line.charAt(p + 1) == '*') {
                         pointer+=2;
                         return new Token(TokenType.OPERATOR, "POWER");
                     }
                     pointer++;
-                    return new Token(TokenType.OPERATOR, "MULTIPLY");
+                    return new Token(TokenType.OPERATOR, "ASTERISK");
                 case '+':
                     pointer++;
                     return new Token(TokenType.OPERATOR, "PLUS");
@@ -305,6 +301,10 @@ public class Lexer {
                 }
                 else
                     return null;
+            }
+            if (lower.charAt(p) == ' ') {
+                pointer++;
+                break;
             }
             if (operator.isOperator(lower.charAt(p)) && lower.charAt(p) != '.') {
                 if (literal.toString().equals("")) {
