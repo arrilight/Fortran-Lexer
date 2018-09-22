@@ -6,6 +6,7 @@ public class Lexer {
     private Logical logical;
     private Operator operator;
     private String line;
+    private String lower;
 
     public Lexer() throws IOException {
         keywords = new Keywords();
@@ -17,6 +18,7 @@ public class Lexer {
         Reader reader = new Reader("in.txt");
         Writer writer = new Writer("out.txt");
         while ((line = reader.nextLine()) != null) {
+            lower = line.toLowerCase();
             pointer = 0;
             while (pointer < line.length() && line.length() > 5) {
                 Token token;
@@ -79,6 +81,10 @@ public class Lexer {
     }
 
     private Token findKeywordOrIdentifier() {
+        Token result;
+        if ((result = findLiteral()) != null) {
+            return result;
+        }
         StringBuilder word = new StringBuilder();
         int p = pointer;
         while(p < line.length() && line.charAt(p) != ' '
@@ -87,7 +93,6 @@ public class Lexer {
             p++;
         }
         if (keywords.isKeyword(stringify(word))) {
-            Token result;
             if ((result = findCompositeKeyword(stringify(word), p)) != null) {
                 return result;
             }
@@ -106,7 +111,7 @@ public class Lexer {
             while (p < line.length() && line.charAt(p) == ' ')
                 p++;
             if (p + 1 < line.length() &&
-                    line.toLowerCase().substring(p, p + 2).equals("if")) {
+                    lower.substring(p, p + 2).equals("if")) {
                 pointer = p + 2;
                 return new Token(TokenType.KEYWORD, "ELSE IF");
             }
@@ -116,9 +121,19 @@ public class Lexer {
             while (line.charAt(p) == ' ')
                 p++;
             if (p + 3 < line.length() &&
-                    line.toLowerCase().substring(p, p + 4).equals("data")) {
+                    lower.substring(p, p + 4).equals("data")) {
                 pointer = p + 2;
                 return new Token(TokenType.KEYWORD, "ELSE IF");
+            }
+        }
+        if (word.equals("go")) {
+            p++;
+            while (line.charAt(p) == ' ')
+                p++;
+            if (p + 1 < line.length() &&
+                    lower.substring(p, p + 2).equals("to")) {
+                pointer = p + 2;
+                return new Token(TokenType.KEYWORD, "GO_TO");
             }
         }
         return null;
@@ -182,7 +197,7 @@ public class Lexer {
                     return new Token(TokenType.OPERATOR, "DIVIDE");
                 case '.':
                     Token result;
-                    if ((result = findLogicalOperator(line)) != null) {
+                    if ((result = findLogicalOperator()) != null) {
                         return result;
                     }
                 case ',':
@@ -230,7 +245,7 @@ public class Lexer {
         return false;
     }
 
-    private Token findLogicalOperator(String line) {
+    private Token findLogicalOperator() {
         int p = pointer + 1;
         int length = line.length();
         StringBuilder word = new StringBuilder();
@@ -238,12 +253,12 @@ public class Lexer {
             word.append(line.charAt(p));
             p++;
         }
-        if (logical.isLogical(word.toString())) {
-            if (logical.isLogicalLiteral(word.toString())) {
-                pointer = p;
+        if (logical.isLogical(stringify(word))) {
+            if (logical.isLogicalLiteral(stringify(word))) {
+                pointer = p + 1;
                 return new Token(TokenType.LITERAL, word.toString());
             }
-            pointer = p;
+            pointer = p + 1;
             return new Token(TokenType.OPERATOR, word.toString());
         }
         return null;
@@ -254,8 +269,10 @@ public class Lexer {
         if (line.charAt(p) == '\"' || line.charAt(p) == '\'') {
             return findStringLiteral(line.charAt(p));
         }
-        if (Character.isDigit(line.charAt(p))) {
-            return findDigitLiteral(line);
+        if (isPotentialDigitLiteral(lower.charAt(p))) {
+            Token digitLiteral;
+            if ((digitLiteral = findDigitLiteral()) != null)
+                return digitLiteral;
         }
         return null;
     }
@@ -272,17 +289,46 @@ public class Lexer {
         return new Token(TokenType.LITERAL, literal.toString());
     }
 
-    private Token findDigitLiteral(String line) {
+    private Token findDigitLiteral() {
         int p = pointer;
+        int numOfLetters = 0;
         int length = line.length();
         StringBuilder literal = new StringBuilder();
-        while (p < length && (Character.isDigit(line.charAt(p))
-        || line.charAt(p) == '.')) {
+        while (p < length) {
+            if (Character.isLetter((lower.charAt(p)))) {
+                if (isDigitLiteralChar(lower.charAt(p))) {
+                    numOfLetters++;
+                }
+                else
+                    return null;
+            }
+            if (operator.isOperator(lower.charAt(p))) {
+                if (literal.toString().equals("")) {
+                    return null;
+                }
+                else
+                    break;
+            }
+            if (numOfLetters > 1)
+                return null;
             literal.append(line.charAt(p));
             p++;
         }
         pointer = p;
         return new Token(TokenType.LITERAL, literal.toString());
+    }
+
+    private boolean isDigit(char c) {
+        return Character.isDigit(c);
+    }
+
+    private boolean isDigitLiteralChar(char c) {
+        return c == '.' || c == 'e' || c =='i'
+                || c =='a' || c =='f' || c == 'd';
+    }
+
+    private boolean isPotentialDigitLiteral(char c) {
+        return isDigit(c) || isDigitLiteralChar(c);
     }
 
     private boolean isAComment() {

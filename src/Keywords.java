@@ -15,6 +15,7 @@ public class Keywords {
         }
         keywords.replace("block", false, true);
         keywords.replace("else", false, true);
+        keywords.replace("go", false, true);
 
     }
 

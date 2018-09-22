@@ -18,6 +18,8 @@ external
 format
 function
 goto
+go
+to
 if
 implicit
 none
@@ -44,6 +46,7 @@ character
 complex
 complex*16
 complex*32
+integer
 integer*2
 integer*4
 integer*8

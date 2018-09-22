@@ -10,7 +10,7 @@ public class Logical {
     private void initializeMap() {
         logical = new ArrayList<>();
         for (LogicalEnum op: LogicalEnum.values()) {
-            logical.add(op.name());
+            logical.add(op.name().toLowerCase());
         }
     }
 
@@ -19,6 +19,6 @@ public class Logical {
     }
 
     public boolean isLogicalLiteral(String value) {
-        return (value.equals("TRUE") || value.equals("FALSE"));
+        return (value.equals("true") || value.equals("false"));
     }
 }
