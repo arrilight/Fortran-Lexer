@@ -19,6 +19,7 @@ function
 goto
 if
 implicit
+none
 inquire
 intrinsic
 open
@@ -37,3 +38,18 @@ then
 write
 block data
 else if
+byte
+character
+complex
+complex*16
+complex*32
+integer*2
+integer*4
+integer*8
+logical*1
+logical*2
+logical*4
+logical*8
+real
+real*8
+real*16
