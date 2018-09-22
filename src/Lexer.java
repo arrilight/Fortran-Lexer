@@ -306,7 +306,7 @@ public class Lexer {
                 else
                     return null;
             }
-            if (operator.isOperator(lower.charAt(p))) {
+            if (operator.isOperator(lower.charAt(p)) && lower.charAt(p) != '.') {
                 if (literal.toString().equals("")) {
                     return null;
                 }
