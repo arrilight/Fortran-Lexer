@@ -1351,29 +1351,25 @@ Type: IDENTIFIER; value: zStencil;
 -
 -
 Type: IDENTIFIER; value: xStencil;
-Type: OPERATOR; value: EQUAL;
-Type: OPERATOR; value: CLOSING_ANGLE__BRACKET;
+Type: OPERATOR; value: POINTER;
 Type: IDENTIFIER; value: interpolation;
 Type: OPERATOR; value: SPECIAL_FUNCTION;
 Type: IDENTIFIER; value: stencilX;
 -
 Type: IDENTIFIER; value: yStencil;
-Type: OPERATOR; value: EQUAL;
-Type: OPERATOR; value: CLOSING_ANGLE__BRACKET;
+Type: OPERATOR; value: POINTER;
 Type: IDENTIFIER; value: interpolation;
 Type: OPERATOR; value: SPECIAL_FUNCTION;
 Type: IDENTIFIER; value: stencilY;
 -
 Type: IDENTIFIER; value: zStencil;
-Type: OPERATOR; value: EQUAL;
-Type: OPERATOR; value: CLOSING_ANGLE__BRACKET;
+Type: OPERATOR; value: POINTER;
 Type: IDENTIFIER; value: interpolation;
 Type: OPERATOR; value: SPECIAL_FUNCTION;
 Type: IDENTIFIER; value: stencilZ;
 -
 Type: IDENTIFIER; value: NN;
-Type: OPERATOR; value: EQUAL;
-Type: OPERATOR; value: CLOSING_ANGLE__BRACKET;
+Type: OPERATOR; value: POINTER;
 Type: IDENTIFIER; value: interpolation;
 Type: OPERATOR; value: SPECIAL_FUNCTION;
 Type: IDENTIFIER; value: NN;
