@@ -42,6 +42,10 @@ public class Lexer {
             if ((label = findLabel()) != null) {
                 return label;
             }
+            if (line.charAt(5) == '&') {
+                pointer++;
+                return new Token(TokenType.OPERATOR, "CONCAT");
+            }
         }
         while (line.charAt(pointer) == ' ') {
             pointer++;
@@ -67,13 +71,13 @@ public class Lexer {
 
     private Token findLabel() {
         StringBuilder label = new StringBuilder();
-        for (int i = pointer; i <= 5; i++) {
+        for (int i = pointer; i < 5; i++) {
             int num = Character.getNumericValue(line.charAt(i));
             if (num >= 0 && num <= 9) {
                 label.append(line.charAt(i));
             }
         }
-        pointer = 6;
+        pointer = 5;
         if (!label.toString().equals("")) {
             return new Token(TokenType.LABEL, label.toString());
         }
