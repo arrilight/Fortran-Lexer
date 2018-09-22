@@ -209,6 +209,9 @@ public class Lexer {
                 case '\\':
                     pointer++;
                     return new Token(TokenType.OPERATOR, "ESCAPE_CHARACTER");
+                case '!':
+                    pointer++;
+                    return new Token(TokenType.OPERATOR, "EXCL_POINT");
 
 
 
@@ -328,12 +331,14 @@ public class Lexer {
 
     private boolean isAComment() {
         int p = 0;
-        while (p < 7 && p < line.length()) {
+        while (p + 1 < line.length() && line.charAt(p + 1) == ' ') {
             if (line.charAt(p) == '!' || line.charAt(p) == 'c') {
                 return true;
             }
             p++;
         }
+        if (p + 1 < line.length())
+            return line.charAt(p + 1) == '!';
         return false;
     }
 }
