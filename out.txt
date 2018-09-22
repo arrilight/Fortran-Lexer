@@ -1,129 +1,3153 @@
-Type: LABEL; value: 10;
-Type: KEYWORD; value: program;
-Type: IDENTIFIER; value: main;
-
-Type: KEYWORD; value: implicit;
-Type: KEYWORD; value: none;
-
-
-Type: KEYWORD; value: call;
-Type: IDENTIFIER; value: timestamp;
-Type: OPERATOR; value: LEFT_PAREN;
-Type: OPERATOR; value: RIGHT_PAREN;
-
-
-Type: KEYWORD; value: write;
-Type: OPERATOR; value: LEFT_PAREN;
-Type: OPERATOR; value: ASTERISK;
-Type: OPERATOR; value: COMMA;
-Type: LITERAL; value: '(a)';
-Type: OPERATOR; value: RIGHT_PAREN;
-Type: LITERAL; value: ' ';
-
-Type: KEYWORD; value: write;
-Type: OPERATOR; value: LEFT_PAREN;
-Type: OPERATOR; value: ASTERISK;
-Type: OPERATOR; value: COMMA;
-Type: LITERAL; value: '(a)';
-Type: OPERATOR; value: RIGHT_PAREN;
-Type: LITERAL; value: 'HELLO:';
-
-Type: KEYWORD; value: write;
-Type: OPERATOR; value: LEFT_PAREN;
-Type: OPERATOR; value: ASTERISK;
-Type: OPERATOR; value: COMMA;
-Type: LITERAL; value: '(a)';
-Type: OPERATOR; value: RIGHT_PAREN;
-Type: LITERAL; value: '  FORTRAN77 version';
-
-Type: KEYWORD; value: write;
-Type: OPERATOR; value: LEFT_PAREN;
-Type: OPERATOR; value: ASTERISK;
-Type: OPERATOR; value: COMMA;
-Type: LITERAL; value: '(a)';
-Type: OPERATOR; value: RIGHT_PAREN;
-Type: LITERAL; value: '  This is how to say:';
-
-Type: KEYWORD; value: write;
-Type: OPERATOR; value: LEFT_PAREN;
-Type: OPERATOR; value: ASTERISK;
-Type: OPERATOR; value: COMMA;
-Type: LITERAL; value: '(a)';
-Type: OPERATOR; value: RIGHT_PAREN;
-Type: LITERAL; value: ' ';
-
-Type: KEYWORD; value: write;
-Type: OPERATOR; value: LEFT_PAREN;
-Type: OPERATOR; value: ASTERISK;
-Type: OPERATOR; value: COMMA;
-Type: LITERAL; value: '(a)';
-Type: OPERATOR; value: RIGHT_PAREN;
-Type: LITERAL; value: '  Hello, world!';
-
-
-Type: KEYWORD; value: write;
-Type: OPERATOR; value: LEFT_PAREN;
-Type: OPERATOR; value: ASTERISK;
-Type: OPERATOR; value: COMMA;
-Type: LITERAL; value: '(a)';
-Type: OPERATOR; value: RIGHT_PAREN;
-Type: LITERAL; value: ' ';
-
-Type: KEYWORD; value: call;
-Type: IDENTIFIER; value: timestamp;
-Type: OPERATOR; value: LEFT_PAREN;
-Type: OPERATOR; value: RIGHT_PAREN;
-
-
-Type: KEYWORD; value: stop;
-
-Type: KEYWORD; value: end;
-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
 Type: KEYWORD; value: subroutine;
-Type: IDENTIFIER; value: timestamp;
+Type: IDENTIFIER; value: dnaitr;
+-
+Type: KEYWORD; value: subroutine;
+Type: IDENTIFIER; value: dnaitr;
 Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ido;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: bmat;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: k;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: np;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: nb;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: v;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ldv;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: h;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ldh;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: subroutine;
+Type: IDENTIFIER; value: dnaitr;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ido;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: bmat;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: k;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: np;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: nb;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: v;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ldv;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: h;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ldh;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ipntr;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: info;
 Type: OPERATOR; value: RIGHT_PAREN;
-
-Type: KEYWORD; value: implicit;
-Type: KEYWORD; value: none;
-
-
-Type: KEYWORD; value: character;
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: include;
+Type: LITERAL; value: 'debug.h';
+-
+Type: KEYWORD; value: include;
+Type: LITERAL; value: 'stat.h';
+-
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: integer;
+Type: IDENTIFIER; value: ido;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: info;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: k;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ldh;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ldv;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: nb;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: np;
+-
+Type: IDENTIFIER; value: Double;
+Type: IDENTIFIER; value: precision;
+-
+Type: IDENTIFIER; value: Double;
+Type: IDENTIFIER; value: precision;
+Type: IDENTIFIER; value: rnorm;
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: integer;
+Type: IDENTIFIER; value: ipntr;
 Type: OPERATOR; value: LEFT_PAREN;
-Type: IDENTIFIER; value: len;
+Type: LITERAL; value: 3;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: Double;
+Type: IDENTIFIER; value: precision;
+-
+Type: IDENTIFIER; value: Double;
+Type: IDENTIFIER; value: precision;
+Type: IDENTIFIER; value: h;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ldh;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: k;
+Type: OPERATOR; value: PLUS;
+Type: IDENTIFIER; value: np;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: v;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ldv;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: k;
+Type: OPERATOR; value: PLUS;
+Type: IDENTIFIER; value: np;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 3;
+Type: OPERATOR; value: MULTIPLY;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: Double;
+Type: IDENTIFIER; value: precision;
+-
+Type: IDENTIFIER; value: Double;
+Type: IDENTIFIER; value: precision;
+Type: IDENTIFIER; value: one;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: zero;
+-
+Type: KEYWORD; value: parameter;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: one;
 Type: OPERATOR; value: EQUAL;
-Type: LITERAL; value: 8.5;
-Type: OPERATOR; value: RIGHT_PAREN;
-
-Type: KEYWORD; value: character;
-Type: OPERATOR; value: LEFT_PAREN;
-Type: IDENTIFIER; value: len;
+Type: LITERAL; value: 1.0;
+Type: IDENTIFIER; value: D;
+Type: OPERATOR; value: PLUS;
+Type: LITERAL; value: 0;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: zero;
 Type: OPERATOR; value: EQUAL;
-Type: LITERAL; value: 10;
+Type: LITERAL; value: 0.0;
+Type: IDENTIFIER; value: D;
+Type: OPERATOR; value: PLUS;
+Type: LITERAL; value: 0;
 Type: OPERATOR; value: RIGHT_PAREN;
-
-
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: logical;
+Type: IDENTIFIER; value: first;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: orth1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: orth2;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: rstart;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: step3;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: step4;
+-
+Type: IDENTIFIER; value: integer;
+Type: IDENTIFIER; value: ierr;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: infol;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ipj;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: irj;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ivj;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: iter;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: itry;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: msglvl;
+Type: OPERATOR; value: COMMA;
+-
+Type: IDENTIFIER; value: integer;
+Type: IDENTIFIER; value: ierr;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: infol;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ipj;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: irj;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ivj;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: iter;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: itry;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: msglvl;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: jj;
+-
+Type: IDENTIFIER; value: Double;
+Type: IDENTIFIER; value: precision;
+-
+Type: IDENTIFIER; value: Double;
+Type: IDENTIFIER; value: precision;
+Type: IDENTIFIER; value: betaj;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ovfl;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: temp1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: rnorm1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: smlnum;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: tst1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ulp;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: unfl;
+Type: OPERATOR; value: COMMA;
+-
+Type: IDENTIFIER; value: Double;
+Type: IDENTIFIER; value: precision;
+Type: IDENTIFIER; value: betaj;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ovfl;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: temp1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: rnorm1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: smlnum;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: tst1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ulp;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: unfl;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: wnorm;
+-
+Type: KEYWORD; value: save;
+Type: IDENTIFIER; value: first;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: orth1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: orth2;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: rstart;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: step3;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: step4;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: save;
+Type: IDENTIFIER; value: first;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: orth1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: orth2;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: rstart;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: step3;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: step4;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ierr;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ipj;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: irj;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ivj;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: iter;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: itry;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: msglvl;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ovfl;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: save;
+Type: IDENTIFIER; value: first;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: orth1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: orth2;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: rstart;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: step3;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: step4;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ierr;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ipj;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: irj;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ivj;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: iter;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: itry;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: msglvl;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ovfl;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: betaj;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: rnorm1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: smlnum;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ulp;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: unfl;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: wnorm;
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: Double;
+Type: IDENTIFIER; value: precision;
+-
+Type: IDENTIFIER; value: Double;
+Type: IDENTIFIER; value: precision;
+Type: IDENTIFIER; value: xtemp;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 2;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: external;
+Type: IDENTIFIER; value: daxpy;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: dcopy;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: dscal;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: dgemv;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: dgetv0;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: dlabad;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: external;
+Type: IDENTIFIER; value: daxpy;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: dcopy;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: dscal;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: dgemv;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: dgetv0;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: dlabad;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: dvout;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: dmout;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ivout;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: arscnd;
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: Double;
+Type: IDENTIFIER; value: precision;
+-
+Type: IDENTIFIER; value: Double;
+Type: IDENTIFIER; value: precision;
+Type: IDENTIFIER; value: ddot;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: dnrm2;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: dlanhs;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: dlamch;
+-
+Type: KEYWORD; value: external;
+Type: IDENTIFIER; value: ddot;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: dnrm2;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: dlanhs;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: dlamch;
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: intrinsic;
+Type: IDENTIFIER; value: abs;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: sqrt;
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: data;
+Type: IDENTIFIER; value: first;
+Type: OPERATOR; value: DIVIDE;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: true;
+Type: OPERATOR; value: COMMA;
+Type: OPERATOR; value: DIVIDE;
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: first;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: unfl;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: dlamch;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 'safe minimum';
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: ovfl;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: one;
+Type: OPERATOR; value: DIVIDE;
+Type: IDENTIFIER; value: unfl;
+-
 Type: KEYWORD; value: call;
-Type: IDENTIFIER; value: date_and_time;
+Type: IDENTIFIER; value: dlabad;
 Type: OPERATOR; value: LEFT_PAREN;
-Type: IDENTIFIER; value: date;
+Type: IDENTIFIER; value: unfl;
 Type: OPERATOR; value: COMMA;
-Type: IDENTIFIER; value: time;
+Type: IDENTIFIER; value: ovfl;
 Type: OPERATOR; value: RIGHT_PAREN;
-
-
-Type: KEYWORD; value: write;
+-
+Type: IDENTIFIER; value: ulp;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: dlamch;
 Type: OPERATOR; value: LEFT_PAREN;
-Type: OPERATOR; value: ASTERISK;
-Type: OPERATOR; value: COMMA;
-Type: LITERAL; value: '(a8,2x,a10)';
+Type: LITERAL; value: 'precision';
 Type: OPERATOR; value: RIGHT_PAREN;
-Type: IDENTIFIER; value: date;
+-
+Type: IDENTIFIER; value: smlnum;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: unfl;
+Type: OPERATOR; value: MULTIPLY;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: DIVIDE;
+Type: IDENTIFIER; value: ulp;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: first;
+Type: OPERATOR; value: EQUAL;
 Type: OPERATOR; value: COMMA;
-Type: IDENTIFIER; value: time;
-
-
-Type: KEYWORD; value: return;
-
+Type: IDENTIFIER; value: false;
+Type: OPERATOR; value: COMMA;
+-
 Type: KEYWORD; value: end;
-
+Type: KEYWORD; value: if;
+-
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ido;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: eq;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 0;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: arscnd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t0;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: msglvl;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: mnaitr;
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: info;
+Type: OPERATOR; value: EQUAL;
+Type: LITERAL; value: 0;
+-
+Type: IDENTIFIER; value: step3;
+Type: OPERATOR; value: EQUAL;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: false;
+Type: OPERATOR; value: COMMA;
+-
+Type: IDENTIFIER; value: step4;
+Type: OPERATOR; value: EQUAL;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: false;
+Type: OPERATOR; value: COMMA;
+-
+Type: IDENTIFIER; value: rstart;
+Type: OPERATOR; value: EQUAL;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: false;
+Type: OPERATOR; value: COMMA;
+-
+Type: IDENTIFIER; value: orth1;
+Type: OPERATOR; value: EQUAL;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: false;
+Type: OPERATOR; value: COMMA;
+-
+Type: IDENTIFIER; value: orth2;
+Type: OPERATOR; value: EQUAL;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: false;
+Type: OPERATOR; value: COMMA;
+-
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: k;
+Type: OPERATOR; value: PLUS;
+Type: LITERAL; value: 1;
+-
+Type: IDENTIFIER; value: ipj;
+Type: OPERATOR; value: EQUAL;
+Type: LITERAL; value: 1;
+-
+Type: IDENTIFIER; value: irj;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: ipj;
+Type: OPERATOR; value: PLUS;
+Type: IDENTIFIER; value: n;
+-
+Type: IDENTIFIER; value: ivj;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: irj;
+Type: OPERATOR; value: PLUS;
+Type: IDENTIFIER; value: n;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: step3;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: IDENTIFIER; value: go;
+Type: IDENTIFIER; value: to;
+Type: LITERAL; value: 50;
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: step4;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: IDENTIFIER; value: go;
+Type: IDENTIFIER; value: to;
+Type: LITERAL; value: 60;
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: orth1;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: IDENTIFIER; value: go;
+Type: IDENTIFIER; value: to;
+Type: LITERAL; value: 70;
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: orth2;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: IDENTIFIER; value: go;
+Type: IDENTIFIER; value: to;
+Type: LITERAL; value: 90;
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: rstart;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: IDENTIFIER; value: go;
+Type: IDENTIFIER; value: to;
+Type: LITERAL; value: 30;
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: msglvl;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: gt;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: ivout;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: logfil;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ndigit;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: ivout;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: logfil;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ndigit;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: '_naitr: generating Arnoldi vector number';
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dvout;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: logfil;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ndigit;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dvout;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: logfil;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ndigit;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: '_naitr: B-norm of the current residual is';
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+-
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: betaj;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: rnorm;
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: gt;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: zero;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: IDENTIFIER; value: go;
+Type: IDENTIFIER; value: to;
+Type: LITERAL; value: 40;
+-
+-
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: msglvl;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: gt;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 0;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: ivout;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: logfil;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ndigit;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: ivout;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: logfil;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ndigit;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: '_naitr: ****** RESTART AT STEP ******';
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+-
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: betaj;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: zero;
+-
+Type: IDENTIFIER; value: nrstrt;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: nrstrt;
+Type: OPERATOR; value: PLUS;
+Type: LITERAL; value: 1;
+-
+Type: IDENTIFIER; value: itry;
+Type: OPERATOR; value: EQUAL;
+Type: LITERAL; value: 1;
+-
+Type: LABEL; value: 20;
+Type: KEYWORD; value: continue;
+-
+Type: IDENTIFIER; value: rstart;
+Type: OPERATOR; value: EQUAL;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: true;
+Type: OPERATOR; value: COMMA;
+-
+Type: IDENTIFIER; value: ido;
+Type: OPERATOR; value: EQUAL;
+Type: LITERAL; value: 0;
+-
+Type: LABEL; value: 30;
+Type: KEYWORD; value: continue;
+-
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dgetv0;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ido;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: bmat;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: itry;
+Type: OPERATOR; value: COMMA;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: false;
+Type: OPERATOR; value: COMMA;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: v;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ldv;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dgetv0;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ido;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: bmat;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: itry;
+Type: OPERATOR; value: COMMA;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: false;
+Type: OPERATOR; value: COMMA;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: v;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ldv;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ipntr;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ierr;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ido;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ne;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 99;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: IDENTIFIER; value: go;
+Type: IDENTIFIER; value: to;
+Type: LITERAL; value: 9000;
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ierr;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: lt;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 0;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: IDENTIFIER; value: itry;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: itry;
+Type: OPERATOR; value: PLUS;
+Type: LITERAL; value: 1;
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: itry;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: le;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 3;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: IDENTIFIER; value: go;
+Type: IDENTIFIER; value: to;
+Type: LITERAL; value: 20;
+-
+-
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: info;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: MINUS;
+Type: LITERAL; value: 1;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: arscnd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: tnaitr;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: tnaitr;
+Type: OPERATOR; value: PLUS;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t1;
+Type: OPERATOR; value: MINUS;
+Type: IDENTIFIER; value: t0;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: ido;
+Type: OPERATOR; value: EQUAL;
+Type: LITERAL; value: 99;
+-
+Type: IDENTIFIER; value: go;
+Type: IDENTIFIER; value: to;
+Type: LITERAL; value: 9000;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+-
+Type: LABEL; value: 40;
+Type: KEYWORD; value: continue;
+-
+-
+-
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dcopy;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: v;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ge;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: unfl;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: IDENTIFIER; value: temp1;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: one;
+Type: OPERATOR; value: DIVIDE;
+Type: IDENTIFIER; value: rnorm;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dscal;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: temp1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: v;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dscal;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: temp1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ipj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: else;
+-
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dlascl;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 'General';
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: one;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dlascl;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 'General';
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: one;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: v;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: infol;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dlascl;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 'General';
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: one;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dlascl;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 'General';
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: one;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ipj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: infol;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: step3;
+Type: OPERATOR; value: EQUAL;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: true;
+Type: OPERATOR; value: COMMA;
+-
+Type: IDENTIFIER; value: nopx;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: nopx;
+Type: OPERATOR; value: PLUS;
+Type: LITERAL; value: 1;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: arscnd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t2;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dcopy;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: v;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ivj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: ipntr;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: ivj;
+-
+Type: IDENTIFIER; value: ipntr;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 2;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: irj;
+-
+Type: IDENTIFIER; value: ipntr;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 3;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: ipj;
+-
+Type: IDENTIFIER; value: ido;
+Type: OPERATOR; value: EQUAL;
+Type: LITERAL; value: 1;
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: go;
+Type: IDENTIFIER; value: to;
+Type: LITERAL; value: 9000;
+-
+Type: LABEL; value: 50;
+Type: KEYWORD; value: continue;
+-
+-
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: arscnd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t3;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: tmvopx;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: tmvopx;
+Type: OPERATOR; value: PLUS;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t3;
+Type: OPERATOR; value: MINUS;
+Type: IDENTIFIER; value: t2;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: step3;
+Type: OPERATOR; value: EQUAL;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: false;
+Type: OPERATOR; value: COMMA;
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dcopy;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: irj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: arscnd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t2;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: bmat;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: eq;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 'G';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: IDENTIFIER; value: nbx;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: nbx;
+Type: OPERATOR; value: PLUS;
+Type: LITERAL; value: 1;
+-
+Type: IDENTIFIER; value: step4;
+Type: OPERATOR; value: EQUAL;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: true;
+Type: OPERATOR; value: COMMA;
+-
+Type: IDENTIFIER; value: ipntr;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: irj;
+-
+Type: IDENTIFIER; value: ipntr;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 2;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: ipj;
+-
+Type: IDENTIFIER; value: ido;
+Type: OPERATOR; value: EQUAL;
+Type: LITERAL; value: 2;
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: go;
+Type: IDENTIFIER; value: to;
+Type: LITERAL; value: 9000;
+-
+Type: KEYWORD; value: ELSE IF;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: bmat;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: eq;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 'I';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dcopy;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ipj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+Type: LABEL; value: 60;
+Type: KEYWORD; value: continue;
+-
+-
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: bmat;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: eq;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 'G';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: arscnd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t3;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: tmvbx;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: tmvbx;
+Type: OPERATOR; value: PLUS;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t3;
+Type: OPERATOR; value: MINUS;
+Type: IDENTIFIER; value: t2;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+-
+Type: IDENTIFIER; value: step4;
+Type: OPERATOR; value: EQUAL;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: false;
+Type: OPERATOR; value: COMMA;
+-
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: bmat;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: eq;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 'G';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: IDENTIFIER; value: wnorm;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: ddot;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ipj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: wnorm;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: sqrt;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: abs;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: wnorm;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: ELSE IF;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: bmat;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: eq;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 'I';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: IDENTIFIER; value: wnorm;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: dnrm2;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dgemv;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 'T';
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: one;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: v;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ldv;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ipj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dgemv;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 'T';
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: one;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: v;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ldv;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ipj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: zero;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: h;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dgemv;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 'N';
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: OPERATOR; value: MINUS;
+Type: IDENTIFIER; value: one;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: v;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ldv;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: h;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dgemv;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 'N';
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: OPERATOR; value: MINUS;
+Type: IDENTIFIER; value: one;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: v;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ldv;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: h;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: one;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: gt;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: IDENTIFIER; value: h;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: MINUS;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: betaj;
+-
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: arscnd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t4;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+-
+Type: IDENTIFIER; value: orth1;
+Type: OPERATOR; value: EQUAL;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: true;
+Type: OPERATOR; value: COMMA;
+-
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: arscnd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t2;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: bmat;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: eq;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 'G';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: IDENTIFIER; value: nbx;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: nbx;
+Type: OPERATOR; value: PLUS;
+Type: LITERAL; value: 1;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dcopy;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: irj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: ipntr;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: irj;
+-
+Type: IDENTIFIER; value: ipntr;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 2;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: ipj;
+-
+Type: IDENTIFIER; value: ido;
+Type: OPERATOR; value: EQUAL;
+Type: LITERAL; value: 2;
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: go;
+Type: IDENTIFIER; value: to;
+Type: LITERAL; value: 9000;
+-
+Type: KEYWORD; value: ELSE IF;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: bmat;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: eq;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 'I';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dcopy;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ipj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+Type: LABEL; value: 70;
+Type: KEYWORD; value: continue;
+-
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: bmat;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: eq;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 'G';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: arscnd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t3;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: tmvbx;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: tmvbx;
+Type: OPERATOR; value: PLUS;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t3;
+Type: OPERATOR; value: MINUS;
+Type: IDENTIFIER; value: t2;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+-
+Type: IDENTIFIER; value: orth1;
+Type: OPERATOR; value: EQUAL;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: false;
+Type: OPERATOR; value: COMMA;
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: bmat;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: eq;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 'G';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: ddot;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ipj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: sqrt;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: abs;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: ELSE IF;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: bmat;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: eq;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 'I';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: dnrm2;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: gt;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 0.717;
+Type: OPERATOR; value: MULTIPLY;
+Type: IDENTIFIER; value: wnorm;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: IDENTIFIER; value: go;
+Type: IDENTIFIER; value: to;
+Type: LITERAL; value: 100;
+-
+Type: IDENTIFIER; value: iter;
+Type: OPERATOR; value: EQUAL;
+Type: LITERAL; value: 0;
+-
+Type: IDENTIFIER; value: nrorth;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: nrorth;
+Type: OPERATOR; value: PLUS;
+Type: LITERAL; value: 1;
+-
+-
+-
+-
+-
+-
+-
+-
+-
+Type: LABEL; value: 80;
+Type: KEYWORD; value: continue;
+-
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: msglvl;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: gt;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 2;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: IDENTIFIER; value: xtemp;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: wnorm;
+-
+Type: IDENTIFIER; value: xtemp;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 2;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: rnorm;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dvout;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: logfil;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 2;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: xtemp;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ndigit;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dvout;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: logfil;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 2;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: xtemp;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ndigit;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: '_naitr: re-orthonalization; wnorm and rnorm are';
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dvout;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: logfil;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: h;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ndigit;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dvout;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: logfil;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: h;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ndigit;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: '_naitr: j-th column of H';
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dgemv;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 'T';
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: one;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: v;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ldv;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ipj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dgemv;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 'T';
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: one;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: v;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ldv;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ipj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: zero;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: irj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+-
+-
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dgemv;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 'N';
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: OPERATOR; value: MINUS;
+Type: IDENTIFIER; value: one;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: v;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ldv;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: irj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dgemv;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 'N';
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: OPERATOR; value: MINUS;
+Type: IDENTIFIER; value: one;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: v;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ldv;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: irj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: one;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: daxpy;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: one;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: irj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: h;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+-
+Type: IDENTIFIER; value: orth2;
+Type: OPERATOR; value: EQUAL;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: true;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: arscnd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t2;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: bmat;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: eq;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 'G';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: IDENTIFIER; value: nbx;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: nbx;
+Type: OPERATOR; value: PLUS;
+Type: LITERAL; value: 1;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dcopy;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: irj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: ipntr;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: irj;
+-
+Type: IDENTIFIER; value: ipntr;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 2;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: ipj;
+-
+Type: IDENTIFIER; value: ido;
+Type: OPERATOR; value: EQUAL;
+Type: LITERAL; value: 2;
+-
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: go;
+Type: IDENTIFIER; value: to;
+Type: LITERAL; value: 9000;
+-
+Type: KEYWORD; value: ELSE IF;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: bmat;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: eq;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 'I';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dcopy;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ipj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+Type: LABEL; value: 90;
+Type: KEYWORD; value: continue;
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: bmat;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: eq;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 'G';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: arscnd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t3;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: tmvbx;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: tmvbx;
+Type: OPERATOR; value: PLUS;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t3;
+Type: OPERATOR; value: MINUS;
+Type: IDENTIFIER; value: t2;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: bmat;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: eq;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 'G';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: IDENTIFIER; value: rnorm1;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: ddot;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ipj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: rnorm1;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: sqrt;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: abs;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: rnorm1;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: ELSE IF;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: bmat;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: eq;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 'I';
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: IDENTIFIER; value: rnorm1;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: dnrm2;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: msglvl;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: gt;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 0;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: and;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: iter;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: gt;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 0;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: ivout;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: logfil;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ndigit;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: ivout;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: logfil;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ndigit;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: '_naitr: Iterative refinement for Arnoldi residual';
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: msglvl;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: gt;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 2;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: IDENTIFIER; value: xtemp;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: rnorm;
+-
+Type: IDENTIFIER; value: xtemp;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 2;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: rnorm1;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dvout;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: logfil;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 2;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: xtemp;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ndigit;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dvout;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: logfil;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 2;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: xtemp;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ndigit;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: '_naitr: iterative refinement ; rnorm and rnorm1 are';
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: rnorm1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: gt;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 0.717;
+Type: OPERATOR; value: MULTIPLY;
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: rnorm1;
+-
+-
+Type: KEYWORD; value: else;
+-
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: nitref;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: nitref;
+Type: OPERATOR; value: PLUS;
+Type: LITERAL; value: 1;
+-
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: rnorm1;
+-
+Type: IDENTIFIER; value: iter;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: iter;
+Type: OPERATOR; value: PLUS;
+Type: LITERAL; value: 1;
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: iter;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: le;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: IDENTIFIER; value: go;
+Type: IDENTIFIER; value: to;
+Type: LITERAL; value: 80;
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: do;
+Type: LITERAL; value: 95;
+Type: IDENTIFIER; value: jj;
+Type: OPERATOR; value: EQUAL;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: n;
+-
+Type: IDENTIFIER; value: resid;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: jj;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: zero;
+-
+Type: LABEL; value: 95;
+Type: KEYWORD; value: continue;
+-
+Type: IDENTIFIER; value: rnorm;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: zero;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+-
+-
+-
+-
+-
+-
+-
+Type: LABEL; value: 100;
+Type: KEYWORD; value: continue;
+-
+-
+Type: IDENTIFIER; value: rstart;
+Type: OPERATOR; value: EQUAL;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: false;
+Type: OPERATOR; value: COMMA;
+-
+Type: IDENTIFIER; value: orth2;
+Type: OPERATOR; value: EQUAL;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: false;
+Type: OPERATOR; value: COMMA;
+-
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: arscnd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t5;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: titref;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: titref;
+Type: OPERATOR; value: PLUS;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t5;
+Type: OPERATOR; value: MINUS;
+Type: IDENTIFIER; value: t4;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: PLUS;
+Type: LITERAL; value: 1;
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: j;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: gt;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: k;
+Type: OPERATOR; value: PLUS;
+Type: IDENTIFIER; value: np;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: arscnd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t1;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: tnaitr;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: tnaitr;
+Type: OPERATOR; value: PLUS;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: t1;
+Type: OPERATOR; value: MINUS;
+Type: IDENTIFIER; value: t0;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: IDENTIFIER; value: ido;
+Type: OPERATOR; value: EQUAL;
+Type: LITERAL; value: 99;
+-
+Type: KEYWORD; value: do;
+Type: LITERAL; value: 110;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: max;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: k;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: k;
+Type: OPERATOR; value: PLUS;
+Type: IDENTIFIER; value: np;
+Type: OPERATOR; value: MINUS;
+Type: LITERAL; value: 1;
+-
+-
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: tst1;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: abs;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: h;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: PLUS;
+Type: IDENTIFIER; value: abs;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: h;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: PLUS;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: PLUS;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: tst1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: eq;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: zero;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: tst1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: eq;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: zero;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: IDENTIFIER; value: tst1;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: dlanhs;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: LITERAL; value: '1';
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: k;
+Type: OPERATOR; value: PLUS;
+Type: IDENTIFIER; value: np;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: h;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ldh;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: workd;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: n;
+Type: OPERATOR; value: PLUS;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: abs;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: h;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: PLUS;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: le;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: max;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ulp;
+Type: OPERATOR; value: MULTIPLY;
+Type: IDENTIFIER; value: tst1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: smlnum;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: abs;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: h;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: PLUS;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: le;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: max;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: ulp;
+Type: OPERATOR; value: MULTIPLY;
+Type: IDENTIFIER; value: tst1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: smlnum;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: IDENTIFIER; value: h;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: PLUS;
+Type: LITERAL; value: 1;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: i;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: OPERATOR; value: EQUAL;
+Type: IDENTIFIER; value: zero;
+-
+Type: LABEL; value: 110;
+Type: KEYWORD; value: continue;
+-
+-
+Type: KEYWORD; value: if;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: msglvl;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: gt;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: 2;
+Type: OPERATOR; value: RIGHT_PAREN;
+Type: KEYWORD; value: then;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dmout;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: logfil;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: k;
+Type: OPERATOR; value: PLUS;
+Type: IDENTIFIER; value: np;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: k;
+Type: OPERATOR; value: PLUS;
+Type: IDENTIFIER; value: np;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: h;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ldh;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ndigit;
+Type: OPERATOR; value: COMMA;
+-
+Type: KEYWORD; value: call;
+Type: IDENTIFIER; value: dmout;
+Type: OPERATOR; value: LEFT_PAREN;
+Type: IDENTIFIER; value: logfil;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: k;
+Type: OPERATOR; value: PLUS;
+Type: IDENTIFIER; value: np;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: k;
+Type: OPERATOR; value: PLUS;
+Type: IDENTIFIER; value: np;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: h;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ldh;
+Type: OPERATOR; value: COMMA;
+Type: IDENTIFIER; value: ndigit;
+Type: OPERATOR; value: COMMA;
+Type: LITERAL; value: '_naitr: Final upper Hessenberg matrix H of order K+NP';
+Type: OPERATOR; value: RIGHT_PAREN;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+-
+Type: IDENTIFIER; value: go;
+Type: IDENTIFIER; value: to;
+Type: LITERAL; value: 9000;
+-
+Type: KEYWORD; value: end;
+Type: KEYWORD; value: if;
+-
+-
+-
+-
+-
+-
+Type: IDENTIFIER; value: go;
+Type: IDENTIFIER; value: to;
+Type: LITERAL; value: 1000;
+-
+-
+-
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: return;
+-
+-
+-
+-
+-
+-
+Type: KEYWORD; value: end;
+-

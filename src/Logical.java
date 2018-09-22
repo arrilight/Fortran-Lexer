@@ -9,7 +9,7 @@ public class Logical {
 
     private void initializeMap() {
         logical = new ArrayList<>();
-        for (LogicalOperator op: LogicalOperator.values()) {
+        for (LogicalEnum op: LogicalEnum.values()) {
             logical.add(op.name());
         }
     }

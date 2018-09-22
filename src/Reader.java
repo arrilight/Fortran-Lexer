@@ -19,7 +19,7 @@ public class Reader {
     public String nextLine() {
         String line;
         if (scanner.hasNextLine() && (line = scanner.nextLine()).length() >= 6) {
-            if (line.charAt(5) == ' ') {
+            if (line.charAt(5) != '&') {
                 prLine = line;
                 return line;
             } else {

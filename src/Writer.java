@@ -30,7 +30,7 @@ public class Writer {
 
     public void writeEmptyLine() {
         try (FileWriter fw = new FileWriter(this.filename, true)) {
-            fw.write("\n");
+            fw.write("-\n");
         } catch (IOException e) {
             e.printStackTrace();
         }
