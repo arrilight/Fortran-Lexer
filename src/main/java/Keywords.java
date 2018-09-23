@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,9 +14,6 @@ public class Keywords {
         for (String keyword: keywordsList) {
             keywords.put(keyword, false);
         }
-        keywords.replace("block", false, true);
-        keywords.replace("else", false, true);
-        keywords.replace("go", false, true);
 
     }
 
@@ -29,7 +27,7 @@ public class Keywords {
 
     private void initializeKeywords() throws IOException {
         keywordsList = new ArrayList<String>();
-        keywords = new HashMap<>();
+        keywords = new HashMap<String, Boolean>();
         String keyword;
         BufferedReader reader = new BufferedReader(new FileReader("keywords.txt"));
         while ((keyword = reader.readLine()) != null) {

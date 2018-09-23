@@ -2,7 +2,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Operator {
     private ArrayList<String> operators;
@@ -16,7 +15,7 @@ public class Operator {
     }
 
     private void initializeOperators() throws IOException {
-        this.operators = new ArrayList<>();
+        this.operators = new ArrayList<String>();
         String operator;
         BufferedReader reader = new BufferedReader(new FileReader("operators.txt"));
         while ((operator = reader.readLine()) != null) {

@@ -8,7 +8,7 @@ public class Logical {
     }
 
     private void initializeMap() {
-        logical = new ArrayList<>();
+        logical = new ArrayList<String>();
         for (LogicalEnum op: LogicalEnum.values()) {
             logical.add(op.name().toLowerCase());
         }

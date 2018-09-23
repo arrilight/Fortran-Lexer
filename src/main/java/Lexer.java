@@ -1,12 +1,21 @@
 import java.io.IOException;
 
+/**
+ * This class is used to represent the lexer for FORTRAN 90/95 language.
+ */
+
 public class Lexer {
-    private int pointer = 0;
-    private Keywords keywords;
-    private Logical logical;
-    private Operator operator;
-    private String line;
-    private String lower;
+    private int pointer = 0; // index of the character in the line
+    private Keywords keywords; // structure of keywords that FORTRAN 90/95 uses
+    private Logical logical; // structure of logical operators that FORTRAN 90/95 uses
+    private Operator operator; // structure of operators that FORTRAN 90/95 uses
+    private String line; // current line
+    private String lower; // lower case of the current line
+
+    /**
+     * The constructor for the lexer initializes the structures.
+     * @throws IOException in case keywords.txt or operators.txt is not found
+     */
 
     public Lexer() throws IOException {
         keywords = new Keywords();
@@ -14,7 +23,10 @@ public class Lexer {
         operator = new Operator();
     }
 
-    void startLexicalAnalysis() {
+    /**
+     * Function that starts lexical analysis for a given line.
+     */
+    void startLexicalAnalysis() throws IOException {
         Reader reader = new Reader("in.txt");
         Writer writer = new Writer("out.txt");
         while ((line = reader.nextLine()) != null) {
@@ -32,59 +44,81 @@ public class Lexer {
 
     }
 
+    /**
+     * Function that returns next token in the line.
+     * @return Token if it was able to found one, null otherwise
+     */
     Token nextToken() {
-        if (isAComment()) {
+        if (isAComment()) { // if this line is a comment
             pointer = line.length();
-            return null;
+            return null; // we don't do the analysis
         }
         while (pointer < line.length() && line.charAt(pointer) == ' ') {
-            pointer++;
+            pointer++; // skip all spaces
         }
-        if (pointer == line.length())
-            return null;
-        if (Character.isLetter(line.charAt(pointer))) {
+        if (pointer == line.length())  // if nothing left to analyze
+            return null;  // return null
+        if (Character.isLetter(line.charAt(pointer))) { // if char is a letter
             Token keyword;
+            // find keyword or identifier
             if ((keyword = findKeywordOrIdentifier()) != null) {
                 return keyword;
             }
         }
         Token result;
         if ((result = findOperator()) != null) {
+            // find operators
             return result;
         }
         if ((result = findLiteral()) != null) {
+            // find literals
             return result;
         }
-        pointer = line.length();
+//        pointer = line.length();
 
+        // code should never reach this point
+        System.out.println("Something probably went wrong!");
         return null;
 
     }
 
+    /**
+     * This function is used to find keywords, identifiers or literals in the source code.
+     * @return token if found one, null otherwise
+     */
     Token findKeywordOrIdentifier() {
         Token result;
-        if ((result = findLiteral()) != null) {
+        if ((result = findLiteral()) != null) { // find a literal
             return result;
         }
         StringBuilder word = new StringBuilder();
         int p = pointer;
         while (p < line.length() && line.charAt(p) != ' '
                 && !operator.isOperator(line.charAt(p))) {
+            // append the word until operator or a blank space
             word.append(line.charAt(p));
             p++;
         }
-        if (keywords.isKeyword(stringify(word))) {
+        if (keywords.isKeyword(stringify(word))) { //if this word is a keyword
             if ((result = findCompositeKeyword(stringify(word), p)) != null) {
+                // if this keyword consists of multiple words (END DO, for example)
                 return result;
             }
             pointer = p;
             return new Token(TokenType.KEYWORD, word.toString());
-        } else {
+        } else { // if no such keywords exists, that's an identifier
             pointer = p;
             return new Token(TokenType.IDENTIFIER, word.toString());
         }
     }
 
+    /**
+     * This function is used to find composite keywords based on the first word
+     * in that keyword.
+     * @param word the first word
+     * @param p pointer
+     * @return token if a composite keyword if found, null otherwise
+     */
     Token findCompositeKeyword(String word, int p) {
         if (word.equals("else")) {
             p++;
@@ -129,11 +163,15 @@ public class Lexer {
         return null;
     }
 
+    /**
+     * This function is used to find operators in the code.
+     * @return token with an operator if found, null otherwise
+     */
     Token findOperator() {
         int length = line.length();
         int p = pointer;
         if (p < length) {
-            switch (line.charAt(p)) {
+            switch (line.charAt(p)) { //swtich in the character
                 case '=':
                     if (p < length + 1) {
                         if (line.charAt(p + 1) == '=') {
@@ -215,43 +253,45 @@ public class Lexer {
                     pointer++;
                     return new Token(TokenType.OPERATOR, "ESCAPE_CHARACTER");
                 case '!':
+                    // if ! has been encountered, ignore the rest of the line
+                    pointer = line.length();
+                    return new Token(TokenType.OPERATOR, "COMMENT_SYMBOL");
+                case '&':
                     pointer++;
-                    return new Token(TokenType.OPERATOR, "EXCL_POINT");
-
-
+                    return new Token(TokenType.SEPARATOR, "CONCAT");
             }
         }
+        // if no operator was found
         return null;
     }
 
+    /**
+     * This function basically takes the string builder, converts it to the string
+     * and makes it lower case. This function is used to support multiple FORTRAN language versions
+     * (such as 77, 90 and 95)
+     * @param word is the stringbuilder that needs to be stringified.
+     * @return lower-case string
+     */
     private String stringify(StringBuilder word) {
         return word.toString().toLowerCase();
     }
 
-    boolean findLeftParen() {
-        int p = pointer - 1;
-        while (p >= 5) {
-            if (line.charAt(p) == ' ' || line.charAt(p) == '(') {
-                if (line.charAt(p) == '(')
-                    return true;
-            } else {
-                return false;
-            }
-            p--;
-        }
-        return false;
-    }
-
+    /**
+     * This function is used to find logical operators in FORTRAN 77
+     * @return
+     */
     Token findLogicalOperator() {
         int p = pointer + 1;
         int length = line.length();
         StringBuilder word = new StringBuilder();
+        // operators have a format .OPERATOR.
         while (p < length && line.charAt(p) != '.') {
             word.append(line.charAt(p));
             p++;
         }
         if (logical.isLogical(stringify(word))) {
             if (logical.isLogicalLiteral(stringify(word))) {
+                // if the value is .TRUE. or .FALSE.
                 pointer = p + 1;
                 return new Token(TokenType.LITERAL, word.toString());
             }
@@ -261,19 +301,32 @@ public class Lexer {
         return null;
     }
 
+    /**
+     * This function is used to find digit-based and string-based literals
+     * @return token if one is found, null otherwise
+     */
     Token findLiteral() {
         int p = pointer;
+        // If we see ' or "
         if (line.charAt(p) == '\"' || line.charAt(p) == '\'') {
+            // find string literal
             return findStringLiteral(line.charAt(p));
         }
+        // if this could be a digit literal
         if (isPotentialDigitLiteral(lower.charAt(p))) {
             Token digitLiteral;
             if ((digitLiteral = findDigitLiteral()) != null)
                 return digitLiteral;
         }
+        // if nothing is found
         return null;
     }
 
+    /**
+     * This function is used to find string literals in the code
+     * @param div is either ' or ", since FOTRAN treats both as literals.
+     * @return token if the literal is found, null otherwise
+     */
     Token findStringLiteral(char div) {
         int p = pointer;
         StringBuilder literal = new StringBuilder();
@@ -286,16 +339,22 @@ public class Lexer {
         return new Token(TokenType.LITERAL, literal.toString());
     }
 
+    /**
+     * This function is used to find complicated digit literals in FORTRAN.
+     * @return token if literal is found, null otherwise
+     */
     Token findDigitLiteral() {
         int p = pointer;
-        int numOfLetters = 0;
+        int numOfLetters = 0; // maximum 1 letter is the literal
         int length = line.length();
         StringBuilder literal = new StringBuilder();
         while (p < length) {
             if (Character.isLetter((lower.charAt(p)))) {
                 if (isDigitLiteralChar(lower.charAt(p))) {
+                    // to keep the track of letters
                     numOfLetters++;
                 } else
+                    // if more than 1 letter
                     return null;
             }
             if (lower.charAt(p) == ' ') {
@@ -317,27 +376,47 @@ public class Lexer {
         return new Token(TokenType.LITERAL, literal.toString());
     }
 
+    /**
+     * Function checks whether a char is a digit. Used just for code
+     * minimization.
+     * @param c char that needs to be checked
+     * @return true if it is a digit, false otherwise
+     */
     boolean isDigit(char c) {
         return Character.isDigit(c);
     }
 
+    /**
+     * This function is used to check whether the char in the potential literal
+     * is one of the allowed ones by the language.
+     * @param c is the char that needs to be checked
+     * @return true if it is allowed, false otherwise
+     */
     boolean isDigitLiteralChar(char c) {
         return c == '.' || c == 'e' || c == 'i'
                 || c == 'a' || c == 'f' || c == 'd';
     }
 
+    /**
+     * Checks whether this character might belong to the digit literal or not
+     * @param c char that needs to be checked
+     * @return true if it might, false otherwise
+     */
     boolean isPotentialDigitLiteral(char c) {
         return isDigit(c) || isDigitLiteralChar(c);
     }
 
+    /**
+     * This function checks whether the line is a comment
+     * @return
+     */
     boolean isAComment() {
         int p = 0;
+        // skip empty symbols
         while (p + 1 < line.length() && line.charAt(p + 1) == ' ') {
-            if (line.charAt(p) == '!' || line.charAt(p) == 'c') {
-                return true;
-            }
             p++;
         }
+        // if the first symbol in the line is the comment symbol
         if (p + 1 < line.length())
             return line.charAt(p + 1) == '!';
         return false;
