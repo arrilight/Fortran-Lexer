@@ -2,6 +2,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/**
+ * Class that performs the reading from the input
+ */
 public class Reader {
     private Scanner scanner;
     private String prLine;

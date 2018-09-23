@@ -1,6 +1,9 @@
+/**
+ * This class is used to represent the token.
+ */
 public class Token {
-    private TokenType type;
-    private String value;
+    private TokenType type; // token type
+    private String value; // the value of the token
 
     Token(TokenType type, String value) {
         this.type = type;

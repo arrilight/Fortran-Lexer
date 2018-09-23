@@ -74,7 +74,6 @@ public class Lexer {
             // find literals
             return result;
         }
-//        pointer = line.length();
 
         // code should never reach this point
         System.out.println("Something probably went wrong!");

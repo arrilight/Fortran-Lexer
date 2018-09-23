@@ -1,5 +1,10 @@
 import java.util.ArrayList;
 
+/** This class is used to represent logical operators that are used in
+ * FORTRAN 77, 90/95
+ *
+ */
+
 public class Logical {
     private ArrayList<String> logical;
 

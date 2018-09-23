@@ -3,6 +3,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/**
+ * Class that writes tokens to the output file
+ */
+
 public class Writer {
     private String filename;
 
@@ -23,6 +27,11 @@ public class Writer {
         out.close();
     }
 
+    /**
+     * Every comment or the empty line in the code is represented by the
+     *  '-' symbol in the output file.
+     * @throws IOException if file was not found.
+     */
     public void writeEmptyLine() throws IOException {
         FileWriter fw = new FileWriter(this.filename, true);
         fw.write("-\n");

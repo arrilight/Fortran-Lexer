@@ -1,5 +1,8 @@
 import java.io.IOException;
 
+/**
+ * Just a program entry point.
+ */
 public class Main {
 
     public static void main(String[] args) throws IOException {
