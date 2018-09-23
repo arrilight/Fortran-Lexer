@@ -1,16 +1,16 @@
 Type: KEYWORD value: SUBROUTINE
 Type: IDENTIFIER value: interpolation3D
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: C
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: x0
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: x
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: LITERAL value: d
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 -
 -
@@ -47,94 +47,94 @@ Type: KEYWORD value: IMPLICIT
 Type: KEYWORD value: NONE
 -
 Type: KEYWORD value: INTEGER
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: KEYWORD value: PARAMETER
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: dp
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: selected_real_kind
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 15
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: LITERAL value: 307
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: INTEGER
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: r
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: count1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: count2
 -
 Type: KEYWORD value: REAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: KIND
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: dp
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: KEYWORD value: DIMENSION
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: OPERATOR value: COLUMN_DELIMITER
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: OPERATOR value: COLUMN_DELIMITER
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: x
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: r
 Type: OPERATOR value: POWER
 Type: LITERAL value: 3
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: LITERAL value: 3
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: C
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: r
 Type: OPERATOR value: POWER
 Type: LITERAL value: 3
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 Type: OPERATOR value: POWER
 Type: LITERAL value: 3
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: mat
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: r
 Type: OPERATOR value: POWER
 Type: LITERAL value: 3
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 Type: OPERATOR value: POWER
 Type: LITERAL value: 3
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: REAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: KIND
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: dp
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: KEYWORD value: DIMENSION
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: OPERATOR value: COLUMN_DELIMITER
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: x0
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 3
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: REAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: KIND
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: dp
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: LITERAL value: d
 -
@@ -145,23 +145,23 @@ Type: LITERAL value: d
 Type: KEYWORD value: INTEGER
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: LITERAL value: i
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: j
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: k
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: m
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: n
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: b
 -
 Type: KEYWORD value: REAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: KIND
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: dp
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: factor
 -
@@ -189,7 +189,7 @@ Type: KEYWORD value: DO
 Type: LITERAL value: i
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 Type: OPERATOR value: COMMENT_SYMBOL
 -
@@ -197,7 +197,7 @@ Type: KEYWORD value: DO
 Type: IDENTIFIER value: j
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 Type: OPERATOR value: COMMENT_SYMBOL
 -
@@ -205,7 +205,7 @@ Type: KEYWORD value: Do
 Type: IDENTIFIER value: k
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 Type: OPERATOR value: COMMENT_SYMBOL
 -
@@ -219,7 +219,7 @@ Type: KEYWORD value: DO
 Type: IDENTIFIER value: m
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 Type: OPERATOR value: COMMENT_SYMBOL
 -
@@ -227,7 +227,7 @@ Type: KEYWORD value: DO
 Type: IDENTIFIER value: n
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 Type: OPERATOR value: COMMENT_SYMBOL
 -
@@ -235,7 +235,7 @@ Type: KEYWORD value: DO
 Type: IDENTIFIER value: b
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 Type: OPERATOR value: COMMENT_SYMBOL
 -
@@ -246,114 +246,114 @@ Type: OPERATOR value: PLUS
 Type: LITERAL value: 1
 -
 Type: IDENTIFIER value: mat
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: count1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: count2
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: EQUAL
-Type: OPERATOR value: LEFT_PAREN
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: factor
 Type: OPERATOR value: ASTERISK
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: x
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: count1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: MINUS
 Type: IDENTIFIER value: x0
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: POWER
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: m
 Type: OPERATOR value: MINUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: DIVIDE
 Type: IDENTIFIER value: fact
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: m
 Type: OPERATOR value: MINUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: ASTERISK
 Type: SEPARATOR value: CONCAT
 -
-Type: OPERATOR value: LEFT_PAREN
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: factor
 Type: OPERATOR value: ASTERISK
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: x
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: count1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: LITERAL value: 2
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: MINUS
 Type: IDENTIFIER value: x0
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 2
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: POWER
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: n
 Type: OPERATOR value: MINUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: DIVIDE
 Type: IDENTIFIER value: fact
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: n
 Type: OPERATOR value: MINUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: ASTERISK
 Type: SEPARATOR value: CONCAT
 -
-Type: OPERATOR value: LEFT_PAREN
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: factor
 Type: OPERATOR value: ASTERISK
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: x
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: count1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: LITERAL value: 3
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: MINUS
 Type: IDENTIFIER value: x0
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 3
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: POWER
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: b
 Type: OPERATOR value: MINUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: DIVIDE
 Type: IDENTIFIER value: fact
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: b
 Type: OPERATOR value: MINUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: END_DO
 -
@@ -376,9 +376,9 @@ Type: KEYWORD value: END_DO
 Type: IDENTIFIER value: C
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: inv
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: mat
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 -
 -
@@ -392,7 +392,7 @@ Type: KEYWORD value: DO
 Type: LITERAL value: i
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 Type: OPERATOR value: COMMENT_SYMBOL
 -
@@ -400,7 +400,7 @@ Type: KEYWORD value: DO
 Type: IDENTIFIER value: j
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 Type: OPERATOR value: COMMENT_SYMBOL
 -
@@ -408,7 +408,7 @@ Type: KEYWORD value: Do
 Type: IDENTIFIER value: k
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 Type: OPERATOR value: COMMENT_SYMBOL
 -
@@ -422,48 +422,48 @@ Type: KEYWORD value: DO
 Type: IDENTIFIER value: count2
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 Type: OPERATOR value: POWER
 Type: LITERAL value: 3
 -
 Type: IDENTIFIER value: C
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: count1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: count2
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: factor
 Type: OPERATOR value: POWER
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: i
 Type: OPERATOR value: MINUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: ASTERISK
 Type: IDENTIFIER value: factor
 Type: OPERATOR value: POWER
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: j
 Type: OPERATOR value: MINUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: ASTERISK
 Type: IDENTIFIER value: factor
 Type: OPERATOR value: POWER
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: k
 Type: OPERATOR value: MINUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: ASTERISK
 Type: IDENTIFIER value: C
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: count1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: count2
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: END_DO
 -
@@ -481,17 +481,17 @@ Type: IDENTIFIER value: interpolation3D
 -
 Type: KEYWORD value: SUBROUTINE
 Type: IDENTIFIER value: interpolation2D
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: C
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: x0
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: x
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: LITERAL value: d
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 -
 -
@@ -527,90 +527,90 @@ Type: KEYWORD value: IMPLICIT
 Type: KEYWORD value: NONE
 -
 Type: KEYWORD value: INTEGER
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: KEYWORD value: PARAMETER
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: dp
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: selected_real_kind
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 15
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: LITERAL value: 307
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: INTEGER
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: r
 -
 Type: KEYWORD value: REAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: KIND
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: dp
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: KEYWORD value: DIMENSION
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: OPERATOR value: COLUMN_DELIMITER
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: OPERATOR value: COLUMN_DELIMITER
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: x
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: r
 Type: OPERATOR value: POWER
 Type: LITERAL value: 2
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: LITERAL value: 2
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: C
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: r
 Type: OPERATOR value: POWER
 Type: LITERAL value: 2
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 Type: OPERATOR value: POWER
 Type: LITERAL value: 2
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: mat
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: r
 Type: OPERATOR value: POWER
 Type: LITERAL value: 2
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 Type: OPERATOR value: POWER
 Type: LITERAL value: 2
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: REAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: KIND
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: dp
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: KEYWORD value: DIMENSION
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: OPERATOR value: COLUMN_DELIMITER
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: x0
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 3
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: REAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: KIND
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: dp
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: LITERAL value: d
 -
@@ -621,23 +621,23 @@ Type: LITERAL value: d
 Type: KEYWORD value: INTEGER
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: LITERAL value: i
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: j
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: m
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: n
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: count1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: count2
 -
 Type: KEYWORD value: REAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: KIND
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: dp
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: factor
 -
@@ -665,14 +665,14 @@ Type: KEYWORD value: DO
 Type: LITERAL value: i
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 -
 Type: KEYWORD value: DO
 Type: IDENTIFIER value: j
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 -
 Type: IDENTIFIER value: count1
@@ -685,14 +685,14 @@ Type: KEYWORD value: DO
 Type: IDENTIFIER value: m
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 -
 Type: KEYWORD value: DO
 Type: IDENTIFIER value: n
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 -
 Type: IDENTIFIER value: count2
@@ -702,79 +702,79 @@ Type: OPERATOR value: PLUS
 Type: LITERAL value: 1
 -
 Type: IDENTIFIER value: mat
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: count1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: count2
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: EQUAL
-Type: OPERATOR value: LEFT_PAREN
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: factor
 Type: OPERATOR value: ASTERISK
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: x
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: count1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: MINUS
 Type: IDENTIFIER value: x0
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: POWER
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: m
 Type: OPERATOR value: MINUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: DIVIDE
 Type: IDENTIFIER value: fact
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: m
 Type: OPERATOR value: MINUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: ASTERISK
 Type: SEPARATOR value: CONCAT
 -
-Type: OPERATOR value: LEFT_PAREN
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: factor
 Type: OPERATOR value: ASTERISK
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: x
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: count1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: LITERAL value: 2
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: MINUS
 Type: IDENTIFIER value: x0
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 2
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: POWER
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: n
 Type: OPERATOR value: MINUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: DIVIDE
 Type: IDENTIFIER value: fact
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: n
 Type: OPERATOR value: MINUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: END_DO
 -
@@ -791,9 +791,9 @@ Type: KEYWORD value: END_DO
 Type: IDENTIFIER value: C
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: inv
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: mat
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 -
 -
@@ -807,14 +807,14 @@ Type: KEYWORD value: DO
 Type: LITERAL value: i
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 -
 Type: KEYWORD value: DO
 Type: IDENTIFIER value: j
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 -
 Type: IDENTIFIER value: count1
@@ -827,40 +827,40 @@ Type: KEYWORD value: DO
 Type: IDENTIFIER value: count2
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 Type: OPERATOR value: POWER
 Type: LITERAL value: 2
 -
 Type: IDENTIFIER value: C
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: count1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: count2
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: factor
 Type: OPERATOR value: POWER
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: i
 Type: OPERATOR value: MINUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: ASTERISK
 Type: IDENTIFIER value: factor
 Type: OPERATOR value: POWER
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: j
 Type: OPERATOR value: MINUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: ASTERISK
 Type: IDENTIFIER value: C
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: count1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: count2
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: END_DO
 -
@@ -876,15 +876,15 @@ Type: IDENTIFIER value: interpolation2D
 -
 Type: KEYWORD value: SUBROUTINE
 Type: IDENTIFIER value: interpolation1D
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: C
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: x0
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: x
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 -
 -
@@ -911,78 +911,78 @@ Type: KEYWORD value: IMPLICIT
 Type: KEYWORD value: NONE
 -
 Type: KEYWORD value: INTEGER
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: KEYWORD value: PARAMETER
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: dp
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: selected_real_kind
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 15
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: LITERAL value: 307
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: INTEGER
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: r
 -
 Type: KEYWORD value: REAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: KIND
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: dp
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: KEYWORD value: DIMENSION
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: OPERATOR value: COLUMN_DELIMITER
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: OPERATOR value: COLUMN_DELIMITER
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: C
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: r
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: mat
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: r
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: REAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: KIND
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: dp
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: KEYWORD value: DIMENSION
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: OPERATOR value: COLUMN_DELIMITER
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: x0
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 3
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: x
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: r
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: REAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: KIND
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: dp
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: LITERAL value: d
 -
@@ -993,19 +993,19 @@ Type: LITERAL value: d
 Type: KEYWORD value: INTEGER
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: LITERAL value: i
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: m
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: count1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: count2
 -
 Type: KEYWORD value: REAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: KIND
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: dp
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: factor
 -
@@ -1015,16 +1015,16 @@ Type: IDENTIFIER value: factor
 Type: LITERAL value: d
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: x
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: r
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: MINUS
 Type: IDENTIFIER value: x
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: r
 Type: OPERATOR value: MINUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: IDENTIFIER value: factor
 Type: OPERATOR value: EQUAL
@@ -1047,7 +1047,7 @@ Type: KEYWORD value: DO
 Type: LITERAL value: i
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 -
 Type: IDENTIFIER value: count1
@@ -1060,7 +1060,7 @@ Type: KEYWORD value: DO
 Type: IDENTIFIER value: m
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 -
 Type: IDENTIFIER value: count2
@@ -1070,40 +1070,40 @@ Type: OPERATOR value: PLUS
 Type: LITERAL value: 1
 -
 Type: IDENTIFIER value: mat
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: count1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: count2
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: EQUAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: factor
 Type: OPERATOR value: ASTERISK
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: x
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: count1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: MINUS
 Type: IDENTIFIER value: x0
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: POWER
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: m
 Type: OPERATOR value: MINUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: DIVIDE
 Type: IDENTIFIER value: fact
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: m
 Type: OPERATOR value: MINUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: END_DO
 -
@@ -1116,9 +1116,9 @@ Type: KEYWORD value: END_DO
 Type: IDENTIFIER value: C
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: inv
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: mat
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 -
 -
@@ -1132,7 +1132,7 @@ Type: KEYWORD value: DO
 Type: LITERAL value: i
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 -
 Type: IDENTIFIER value: count1
@@ -1145,30 +1145,30 @@ Type: KEYWORD value: DO
 Type: IDENTIFIER value: count2
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: r
 -
 Type: IDENTIFIER value: C
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: count1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: count2
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: factor
 Type: OPERATOR value: POWER
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: i
 Type: OPERATOR value: MINUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: ASTERISK
 Type: IDENTIFIER value: C
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: count1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: count2
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: END_DO
 -
@@ -1182,13 +1182,13 @@ Type: IDENTIFIER value: interpolation1D
 Type: KEYWORD value: SUBROUTINE
 Type: IDENTIFIER value: TaylorInterpolation&
 -
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: dir
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: x0
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: stencilSize
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 -
 -
@@ -1226,21 +1226,21 @@ Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: dir
 -
 Type: KEYWORD value: REAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: KIND
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: long
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: KEYWORD value: DIMENSION
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: OPERATOR value: COLUMN_DELIMITER
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: x0
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 3
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 -
 -
@@ -1248,88 +1248,88 @@ Type: OPERATOR value: RIGHT_PAREN
 Type: KEYWORD value: INTEGER
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: stencilSize
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: LITERAL value: i
 -
 Type: KEYWORD value: INTEGER
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: KEYWORD value: DIMENSION
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: OPERATOR value: COLUMN_DELIMITER
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: KEYWORD value: POINTER
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: NN
 -
 Type: KEYWORD value: REAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: KIND
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: long
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: sigma
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: dl
 -
 Type: KEYWORD value: REAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: KIND
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: long
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: KEYWORD value: DIMENSION
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: OPERATOR value: COLUMN_DELIMITER
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: KEYWORD value: ALLOCATABLE
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: dlVector
 -
 Type: KEYWORD value: REAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: KIND
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: long
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: KEYWORD value: DIMENSION
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: OPERATOR value: COLUMN_DELIMITER
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: OPERATOR value: COLUMN_DELIMITER
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: SEPARATOR value: CONCAT
 -
 Type: IDENTIFIER value: transMAT
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: stencilSize
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: stencilSize
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: REAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: KIND
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: long
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: KEYWORD value: DIMENSION
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: OPERATOR value: COLUMN_DELIMITER
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: KEYWORD value: POINTER
 Type: OPERATOR value: TYPE_ASSIGNMENT
 Type: IDENTIFIER value: xStencil
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: yStencil
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: zStencil
 -
 -
@@ -1363,68 +1363,68 @@ Type: IDENTIFIER value: NN
 -
 -
 Type: KEYWORD value: IF
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: dir
 Type: OPERATOR value: COND_EQUAL
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: KEYWORD value: THEN
 -
 Type: KEYWORD value: ALLOCATE
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: dlVector
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 2
 Type: OPERATOR value: ASTERISK
 Type: IDENTIFIER value: alpha
 Type: OPERATOR value: PLUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: IDENTIFIER value: dl
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: x0
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: MINUS
 Type: IDENTIFIER value: FineGrid
 Type: OPERATOR value: SPECIAL_FUNCTION
 Type: IDENTIFIER value: x
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: NN
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: DO
 Type: LITERAL value: i
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 0
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: LITERAL value: 2
 Type: OPERATOR value: ASTERISK
 Type: IDENTIFIER value: alpha
 -
 Type: IDENTIFIER value: dlVector
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: i
 Type: OPERATOR value: PLUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: dl
 Type: OPERATOR value: POWER
 Type: LITERAL value: i
 Type: OPERATOR value: DIVIDE
 Type: IDENTIFIER value: fact
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: i
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: END_DO
 -
@@ -1435,80 +1435,80 @@ Type: OPERATOR value: EQUAL
 Type: SEPARATOR value: CONCAT
 -
 Type: IDENTIFIER value: MATMUL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: Interpolation
 Type: OPERATOR value: SPECIAL_FUNCTION
 Type: IDENTIFIER value: dx
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: dlVector
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: ENDIF
 -
 -
 Type: KEYWORD value: IF
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: dir
 Type: OPERATOR value: COND_EQUAL
 Type: LITERAL value: 2
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: KEYWORD value: THEN
 -
 Type: KEYWORD value: ALLOCATE
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: dlVector
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 2
 Type: OPERATOR value: ASTERISK
 Type: IDENTIFIER value: beta
 Type: OPERATOR value: PLUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: IDENTIFIER value: dl
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: x0
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 2
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: MINUS
 Type: IDENTIFIER value: FineGrid
 Type: OPERATOR value: SPECIAL_FUNCTION
 Type: IDENTIFIER value: y
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 1
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: NN
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 2
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: DO
 Type: LITERAL value: i
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 0
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: LITERAL value: 2
 Type: OPERATOR value: ASTERISK
 Type: IDENTIFIER value: beta
 -
 Type: IDENTIFIER value: dlVector
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: i
 Type: OPERATOR value: PLUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: dl
 Type: OPERATOR value: POWER
 Type: LITERAL value: i
 Type: OPERATOR value: DIVIDE
 Type: IDENTIFIER value: fact
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: i
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: END_DO
 -
@@ -1518,130 +1518,130 @@ Type: OPERATOR value: EQUAL
 Type: SEPARATOR value: CONCAT
 -
 Type: IDENTIFIER value: MATMUL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: Interpolation
 Type: OPERATOR value: SPECIAL_FUNCTION
 Type: IDENTIFIER value: dy
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: OPERATOR value: COLUMN_DELIMITER
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: OPERATOR value: COLUMN_DELIMITER
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: dlVector
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 -
 Type: KEYWORD value: ENDIF
 -
 -
 Type: KEYWORD value: IF
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: dir
 Type: OPERATOR value: COND_EQUAL
 Type: LITERAL value: 3
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: KEYWORD value: THEN
 -
 -
 -
 Type: IDENTIFIER value: sigma
 Type: OPERATOR value: EQUAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: x0
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 3
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: DIVIDE
 Type: SEPARATOR value: CONCAT
 -
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: FineGrid
 Type: OPERATOR value: SPECIAL_FUNCTION
 Type: IDENTIFIER value: h
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: NN
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: NN
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 2
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: PLUS
 Type: IDENTIFIER value: Wavefield
 Type: OPERATOR value: SPECIAL_FUNCTION
 Type: LITERAL value: E
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: NN
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: NN
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 2
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 -
 -
 Type: KEYWORD value: ALLOCATE
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: dlVector
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 2
 Type: OPERATOR value: ASTERISK
 Type: IDENTIFIER value: gamma
 Type: OPERATOR value: PLUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: IDENTIFIER value: dl
 Type: OPERATOR value: EQUAL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: sigma
 Type: OPERATOR value: MINUS
 Type: IDENTIFIER value: FineGrid
 Type: OPERATOR value: SPECIAL_FUNCTION
 Type: IDENTIFIER value: z
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: NN
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 3
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: DO
 Type: LITERAL value: i
 Type: OPERATOR value: EQUAL
 Type: LITERAL value: 0
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: LITERAL value: 2
 Type: OPERATOR value: ASTERISK
 Type: IDENTIFIER value: gamma
 -
 Type: IDENTIFIER value: dlVector
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: i
 Type: OPERATOR value: PLUS
 Type: LITERAL value: 1
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 Type: OPERATOR value: EQUAL
 Type: IDENTIFIER value: dl
 Type: OPERATOR value: POWER
 Type: LITERAL value: i
 Type: OPERATOR value: DIVIDE
 Type: IDENTIFIER value: fact
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: i
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 Type: KEYWORD value: END_DO
 -
@@ -1651,23 +1651,23 @@ Type: OPERATOR value: EQUAL
 Type: SEPARATOR value: CONCAT
 -
 Type: IDENTIFIER value: MATMUL
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: IDENTIFIER value: Interpolation
 Type: OPERATOR value: SPECIAL_FUNCTION
 Type: IDENTIFIER value: dz
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: OPERATOR value: COLUMN_DELIMITER
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: OPERATOR value: COLUMN_DELIMITER
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: NN
-Type: OPERATOR value: LEFT_PAREN
+Type: SEPARATOR value: LEFT_PAREN
 Type: LITERAL value: 3
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: RIGHT_PAREN
-Type: OPERATOR value: COMMA
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
+Type: SEPARATOR value: COMMA
 Type: IDENTIFIER value: dlVector
-Type: OPERATOR value: RIGHT_PAREN
+Type: SEPARATOR value: RIGHT_PAREN
 -
 -
 Type: KEYWORD value: ENDIF

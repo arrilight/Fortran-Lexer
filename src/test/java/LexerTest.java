@@ -18,11 +18,9 @@ public class LexerTest {
         String line = "subroutine main";
         Token token1 = new Token(TokenType.KEYWORD, "subroutine");
         Token token2 = new Token(TokenType.IDENTIFIER, "main");
-        assertEquals(token1.getValue(), this.testLexer.startLexicalAnalysis(line).get(0).getValue());
-        assertEquals(token1.getType(), this.testLexer.startLexicalAnalysis(line).get(0).getType());
-        assertEquals(token2.getValue(), this.testLexer.startLexicalAnalysis(line).get(1).getValue());
-        assertEquals(token2.getType(), this.testLexer.startLexicalAnalysis(line).get(1).getType());
-        
+        assertEquals(token1.toString(), this.testLexer.startLexicalAnalysis(line).get(0).toString());
+        assertEquals(token2.toString(), this.testLexer.startLexicalAnalysis(line).get(1).toString());
+
         //more tests!!!
 
     }
