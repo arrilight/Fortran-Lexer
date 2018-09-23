@@ -11,7 +11,7 @@ use the command `mvn install` in the parent directory.
 ### Run the program
 To start the program, simply run `Main.main() ` in `/src/main/java`.
 ### Run the tests
-To run the tests, simply run `TestName` in `/src/test/java/addhere` using IntelliJ IDEA or any other IDE that supports `JUnit`.
+To run the tests, simply run `LexerTest` in `/src/test/java/LexerTest` using IntelliJ IDEA or any other IDE that supports `JUnit`.
 # Tokens
 We decided to represent the tokens in a form of a simple class with 2 fields: `type` and `value`.
 ## Types
