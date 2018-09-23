@@ -200,10 +200,10 @@ public class Lexer {
                     return new Token(TokenType.OPERATOR, "OPENING_ANGLE_BRACKET");
                 case '(':
                     pointer++;
-                    return new Token(TokenType.OPERATOR, "LEFT_PAREN");
+                    return new Token(TokenType.SEPARATOR, "LEFT_PAREN");
                 case ')':
                     pointer++;
-                    return new Token(TokenType.OPERATOR, "RIGHT_PAREN");
+                    return new Token(TokenType.SEPARATOR, "RIGHT_PAREN");
                 case '*':
                     if (p + 1 < length && line.charAt(p + 1) == '*') {
                         pointer += 2;
@@ -231,10 +231,10 @@ public class Lexer {
                     }
                 case ',':
                     pointer++;
-                    return new Token(TokenType.OPERATOR, "COMMA");
+                    return new Token(TokenType.SEPARATOR, "COMMA");
                 case '$':
                     pointer++;
-                    return new Token(TokenType.OPERATOR, "DOLLAR_DELIMITER");
+                    return new Token(TokenType.SEPARATOR, "DOLLAR_DELIMITER");
                 case ':':
                     if (p + 1 < length && line.charAt(p + 1) == ':') {
                         pointer += 2;
