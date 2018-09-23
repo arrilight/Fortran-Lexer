@@ -2,6 +2,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.SplittableRandom;
 
 import static org.junit.Assert.*;
 
@@ -10,17 +11,12 @@ import static org.junit.Assert.*;
  */
 public class LexerTest {
     Lexer testLexer;
+    public String commentsTest = new String(" !kjbsdc");
     public LexerTest() throws IOException{
         testLexer = new Lexer();
     }
     @Test
     public void startLexicalAnalysis() throws Exception {
-        String line = "subroutine main";
-        Token token1 = new Token(TokenType.KEYWORD, "subroutine");
-        Token token2 = new Token(TokenType.IDENTIFIER, "main");
-        assertEquals(token1.toString(), this.testLexer.startLexicalAnalysis(line).get(0).toString());
-        assertEquals(token2.toString(), this.testLexer.startLexicalAnalysis(line).get(1).toString());
-
         //more tests!!!
 
     }
@@ -37,12 +33,20 @@ public class LexerTest {
 
     @Test
     public void findCompositeKeyword() throws Exception {
-
+        assertEquals(testLexer.findCompositeKeyword("ELSE IF","else",4).getType(),TokenType.KEYWORD);
+        assertEquals(testLexer.findCompositeKeyword("ELSE IF","else",4).getValue(), "ELSE IF");
     }
 
     @Test
     public void findOperator() throws Exception {
-
+        testLexer.pointer = 0;
+        assertEquals(testLexer.findOperator("+").getType(),TokenType.OPERATOR);
+        testLexer.pointer = 0;
+        assertEquals(testLexer.findOperator("+").getValue(),"PLUS");
+        testLexer.pointer = 0;
+        assertEquals(testLexer.findOperator("(").getType(),TokenType.SEPARATOR);
+        testLexer.pointer = 0;
+        assertEquals(testLexer.findOperator("(").getValue(),"LEFT_PAREN");
     }
 
     @Test
@@ -62,7 +66,12 @@ public class LexerTest {
 
     @Test
     public void findStringLiteral() throws Exception {
-
+        String testString = "jhalsdkm7";
+        char div = '7';
+        testLexer.pointer = 0;
+        assertEquals(testLexer.findStringLiteral(testString,div).getType(), TokenType.LITERAL);
+        testLexer.pointer = 0;
+        assertEquals(testLexer.findStringLiteral(testString,div).getValue(), "jhalsdkm7");
     }
 
     @Test
@@ -116,7 +125,12 @@ public class LexerTest {
 
     @Test
     public void isAComment() throws Exception {
-
+        assertEquals(testLexer.isAComment("  !kjasdc kj"),true);
+        assertEquals(testLexer.isAComment("kjasdc kj"),false);
+        assertEquals(testLexer.isAComment(" !kj"),true);
+        assertEquals(testLexer.isAComment(""),false);
+        assertEquals(testLexer.isAComment("  !134"),true);
+        assertEquals(testLexer.isAComment("sdva"),false);
     }
 
 }

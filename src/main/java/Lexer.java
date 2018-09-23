@@ -6,7 +6,7 @@ import java.util.ArrayList;
  */
 
 public class Lexer {
-    private int pointer = 0; // index of the character in the line
+    public int pointer = 0; // index of the character in the line, public for tests
     private Keywords keywords; // structure of keywords that FORTRAN 90/95 uses
     private Logical logical; // structure of logical operators that FORTRAN 90/95 uses
     private Operator operator; // structure of operators that FORTRAN 90/95 uses
@@ -27,18 +27,24 @@ public class Lexer {
     /**
      * Function that starts lexical analysis for a given line.
      */
-    ArrayList<Token> startLexicalAnalysis(String line) {
-        ArrayList<Token> tokens = new ArrayList<Token>();
-        this.line = line;
-        this.lower = this.line.toLowerCase();
-        pointer = 0;
-        while (pointer < line.length() && line.length() > 5) {
-            Token token;
-            if ((token = nextToken()) != null) {
-                tokens.add(token);
+    void startLexicalAnalysis() throws IOException {
+        Reader reader = new Reader("in.txt");
+        Writer writer = new Writer("out.txt");
+
+        while((this.line = reader.nextLine()) != null) {
+            this.lower = this.line.toLowerCase();
+            this.pointer = 0;
+
+            while(this.pointer < this.line.length() && this.line.length() > 5) {
+                Token token;
+                String newLine = line;
+                if((token = this.nextToken(newLine)) != null) {
+                    writer.write(token);
+                }
             }
+
+            writer.writeEmptyLine();
         }
-        return tokens;
 
     }
 
@@ -46,8 +52,8 @@ public class Lexer {
      * Function that returns next token in the line.
      * @return Token if it was able to found one, null otherwise
      */
-    Token nextToken() {
-        if (isAComment()) { // if this line is a comment
+    Token nextToken(String line) {
+        if (isAComment(line)) { // if this line is a comment
             pointer = line.length();
             return null; // we don't do the analysis
         }
@@ -59,16 +65,16 @@ public class Lexer {
         if (Character.isLetter(line.charAt(pointer))) { // if char is a letter
             Token keyword;
             // find keyword or identifier
-            if ((keyword = findKeywordOrIdentifier()) != null) {
+            if ((keyword = findKeywordOrIdentifier(line)) != null) {
                 return keyword;
             }
         }
         Token result;
-        if ((result = findOperator()) != null) {
+        if ((result = findOperator(line)) != null) {
             // find operators
             return result;
         }
-        if ((result = findLiteral()) != null) {
+        if ((result = findLiteral(line)) != null) {
             // find literals
             return result;
         }
@@ -83,9 +89,9 @@ public class Lexer {
      * This function is used to find keywords, identifiers or literals in the source code.
      * @return token if found one, null otherwise
      */
-    Token findKeywordOrIdentifier() {
+    Token findKeywordOrIdentifier(String line) {
         Token result;
-        if ((result = findLiteral()) != null) { // find a literal
+        if ((result = findLiteral(line)) != null) { // find a literal
             return result;
         }
         StringBuilder word = new StringBuilder();
@@ -97,7 +103,7 @@ public class Lexer {
             p++;
         }
         if (keywords.isKeyword(stringify(word))) { //if this word is a keyword
-            if ((result = findCompositeKeyword(stringify(word), p)) != null) {
+            if ((result = findCompositeKeyword(line,stringify(word), p)) != null) {
                 // if this keyword consists of multiple words (END DO, for example)
                 return result;
             }
@@ -116,13 +122,13 @@ public class Lexer {
      * @param p pointer
      * @return token if a composite keyword if found, null otherwise
      */
-    Token findCompositeKeyword(String word, int p) {
+    Token findCompositeKeyword(String line, String word, int p) {
         if (word.equals("else")) {
             p++;
             while (p < line.length() && line.charAt(p) == ' ')
                 p++;
             if (p + 1 < line.length() &&
-                    lower.substring(p, p + 2).equals("if")) {
+                    line.toLowerCase().substring(p, p + 2).equals("if")) {
                 pointer = p + 2;
                 return new Token(TokenType.KEYWORD, "ELSE IF");
             }
@@ -164,7 +170,7 @@ public class Lexer {
      * This function is used to find operators in the code.
      * @return token with an operator if found, null otherwise
      */
-    Token findOperator() {
+    Token findOperator(String line) {
         int length = line.length();
         int p = pointer;
         if (p < length) {
@@ -224,7 +230,7 @@ public class Lexer {
                     return new Token(TokenType.OPERATOR, "DIVIDE");
                 case '.':
                     Token result;
-                    if ((result = findLogicalOperator()) != null) {
+                    if ((result = findLogicalOperator(line)) != null) {
                         return result;
                     }
                 case ',':
@@ -277,7 +283,7 @@ public class Lexer {
      * This function is used to find logical operators in FORTRAN 77
      * @return
      */
-    Token findLogicalOperator() {
+    Token findLogicalOperator(String line) {
         int p = pointer + 1;
         int length = line.length();
         StringBuilder word = new StringBuilder();
@@ -302,17 +308,17 @@ public class Lexer {
      * This function is used to find digit-based and string-based literals
      * @return token if one is found, null otherwise
      */
-    Token findLiteral() {
+    Token findLiteral(String line) {
         int p = pointer;
         // If we see ' or "
         if (line.charAt(p) == '\"' || line.charAt(p) == '\'') {
             // find string literal
-            return findStringLiteral(line.charAt(p));
+            return findStringLiteral(line,line.charAt(p));
         }
         // if this could be a digit literal
         if (isPotentialDigitLiteral(lower.charAt(p))) {
             Token digitLiteral;
-            if ((digitLiteral = findDigitLiteral()) != null)
+            if ((digitLiteral = findDigitLiteral(line)) != null)
                 return digitLiteral;
         }
         // if nothing is found
@@ -324,7 +330,7 @@ public class Lexer {
      * @param div is either ' or ", since FOTRAN treats both as literals.
      * @return token if the literal is found, null otherwise
      */
-    Token findStringLiteral(char div) {
+    Token findStringLiteral(String line, char div) {
         int p = pointer;
         StringBuilder literal = new StringBuilder();
         literal.append(line.charAt(p));
@@ -340,7 +346,7 @@ public class Lexer {
      * This function is used to find complicated digit literals in FORTRAN.
      * @return token if literal is found, null otherwise
      */
-    Token findDigitLiteral() {
+    Token findDigitLiteral(String line) {
         int p = pointer;
         int numOfLetters = 0; // maximum 1 letter is the literal
         int length = line.length();
@@ -407,7 +413,7 @@ public class Lexer {
      * This function checks whether the line is a comment
      * @return
      */
-    boolean isAComment() {
+    boolean isAComment(String line) {
         int p = 0;
         // skip empty symbols
         while (p + 1 < line.length() && line.charAt(p + 1) == ' ') {
