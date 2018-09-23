@@ -1,5 +1,4 @@
 # Fortran 90/95 Lexer
-
 Made by BS3 students:
 Pavel Kazantsev
 Dzesov Georgy
