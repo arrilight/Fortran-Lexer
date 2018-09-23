@@ -25,7 +25,7 @@
         <module name="Fortran-Lexer" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="Fortran-Lexer" target="1.8" />
     </bytecodeTargetLevel>
   </component>

@@ -32,7 +32,7 @@ public class Lexer {
 
     }
 
-    private Token nextToken() {
+    Token nextToken() {
         if (isAComment()) {
             pointer = line.length();
             return null;
@@ -61,14 +61,14 @@ public class Lexer {
 
     }
 
-    private Token findKeywordOrIdentifier() {
+    Token findKeywordOrIdentifier() {
         Token result;
         if ((result = findLiteral()) != null) {
             return result;
         }
         StringBuilder word = new StringBuilder();
         int p = pointer;
-        while(p < line.length() && line.charAt(p) != ' '
+        while (p < line.length() && line.charAt(p) != ' '
                 && !operator.isOperator(line.charAt(p))) {
             word.append(line.charAt(p));
             p++;
@@ -79,14 +79,13 @@ public class Lexer {
             }
             pointer = p;
             return new Token(TokenType.KEYWORD, word.toString());
-        }
-        else {
+        } else {
             pointer = p;
             return new Token(TokenType.IDENTIFIER, word.toString());
         }
     }
 
-    private Token findCompositeKeyword(String word, int p) {
+    Token findCompositeKeyword(String word, int p) {
         if (word.equals("else")) {
             p++;
             while (p < line.length() && line.charAt(p) == ' ')
@@ -130,19 +129,19 @@ public class Lexer {
         return null;
     }
 
-    private Token findOperator() {
+    Token findOperator() {
         int length = line.length();
         int p = pointer;
         if (p < length) {
-            switch(line.charAt(p)) {
+            switch (line.charAt(p)) {
                 case '=':
                     if (p < length + 1) {
                         if (line.charAt(p + 1) == '=') {
-                            pointer+=2;
+                            pointer += 2;
                             return new Token(TokenType.OPERATOR, "COND_EQUAL");
                         }
                         if (line.charAt(p + 1) == '>') {
-                            pointer+=2;
+                            pointer += 2;
                             return new Token(TokenType.OPERATOR, "POINTER");
                         }
                     }
@@ -150,14 +149,14 @@ public class Lexer {
                     return new Token(TokenType.OPERATOR, "EQUAL");
                 case '>':
                     if (p < length + 1 && line.charAt(p + 1) == '=') {
-                        pointer+=2;
+                        pointer += 2;
                         return new Token(TokenType.OPERATOR, "BIGGER_OR_EQ");
                     }
                     pointer++;
                     return new Token(TokenType.OPERATOR, "CLOSING_ANGLE__BRACKET");
                 case '<':
                     if (p < length + 1 && line.charAt(p + 1) == '=') {
-                        pointer+=2;
+                        pointer += 2;
                         return new Token(TokenType.OPERATOR, "LESS_OR_EQ");
                     }
                     pointer++;
@@ -170,7 +169,7 @@ public class Lexer {
                     return new Token(TokenType.OPERATOR, "RIGHT_PAREN");
                 case '*':
                     if (p + 1 < length && line.charAt(p + 1) == '*') {
-                        pointer+=2;
+                        pointer += 2;
                         return new Token(TokenType.OPERATOR, "POWER");
                     }
                     pointer++;
@@ -183,7 +182,7 @@ public class Lexer {
                     return new Token(TokenType.OPERATOR, "MINUS");
                 case '/':
                     if (p + 1 < length && line.charAt(p + 1) == '=') {
-                        pointer+=2;
+                        pointer += 2;
                         return new Token(TokenType.OPERATOR, "NOT_EQUAL");
                     }
                     pointer++;
@@ -200,8 +199,8 @@ public class Lexer {
                     pointer++;
                     return new Token(TokenType.OPERATOR, "DOLLAR_DELIMITER");
                 case ':':
-                    if (p + 1 < length && line.charAt(p + 1) ==':') {
-                        pointer+=2;
+                    if (p + 1 < length && line.charAt(p + 1) == ':') {
+                        pointer += 2;
                         return new Token(TokenType.OPERATOR, "TYPE_ASSIGNMENT");
                     }
                     pointer++;
@@ -220,7 +219,6 @@ public class Lexer {
                     return new Token(TokenType.OPERATOR, "EXCL_POINT");
 
 
-
             }
         }
         return null;
@@ -230,14 +228,13 @@ public class Lexer {
         return word.toString().toLowerCase();
     }
 
-    private boolean findLeftParen() {
+    boolean findLeftParen() {
         int p = pointer - 1;
         while (p >= 5) {
             if (line.charAt(p) == ' ' || line.charAt(p) == '(') {
                 if (line.charAt(p) == '(')
                     return true;
-            }
-            else {
+            } else {
                 return false;
             }
             p--;
@@ -245,7 +242,7 @@ public class Lexer {
         return false;
     }
 
-    private Token findLogicalOperator() {
+    Token findLogicalOperator() {
         int p = pointer + 1;
         int length = line.length();
         StringBuilder word = new StringBuilder();
@@ -264,7 +261,7 @@ public class Lexer {
         return null;
     }
 
-    private Token findLiteral() {
+    Token findLiteral() {
         int p = pointer;
         if (line.charAt(p) == '\"' || line.charAt(p) == '\'') {
             return findStringLiteral(line.charAt(p));
@@ -277,7 +274,7 @@ public class Lexer {
         return null;
     }
 
-    private Token findStringLiteral(char div) {
+    Token findStringLiteral(char div) {
         int p = pointer;
         StringBuilder literal = new StringBuilder();
         literal.append(line.charAt(p));
@@ -289,7 +286,7 @@ public class Lexer {
         return new Token(TokenType.LITERAL, literal.toString());
     }
 
-    private Token findDigitLiteral() {
+    Token findDigitLiteral() {
         int p = pointer;
         int numOfLetters = 0;
         int length = line.length();
@@ -298,8 +295,7 @@ public class Lexer {
             if (Character.isLetter((lower.charAt(p)))) {
                 if (isDigitLiteralChar(lower.charAt(p))) {
                     numOfLetters++;
-                }
-                else
+                } else
                     return null;
             }
             if (lower.charAt(p) == ' ') {
@@ -309,8 +305,7 @@ public class Lexer {
             if (operator.isOperator(lower.charAt(p)) && lower.charAt(p) != '.') {
                 if (literal.toString().equals("")) {
                     return null;
-                }
-                else
+                } else
                     break;
             }
             if (numOfLetters > 1)
@@ -322,20 +317,20 @@ public class Lexer {
         return new Token(TokenType.LITERAL, literal.toString());
     }
 
-    private boolean isDigit(char c) {
+    boolean isDigit(char c) {
         return Character.isDigit(c);
     }
 
-    private boolean isDigitLiteralChar(char c) {
-        return c == '.' || c == 'e' || c =='i'
-                || c =='a' || c =='f' || c == 'd';
+    boolean isDigitLiteralChar(char c) {
+        return c == '.' || c == 'e' || c == 'i'
+                || c == 'a' || c == 'f' || c == 'd';
     }
 
-    private boolean isPotentialDigitLiteral(char c) {
+    boolean isPotentialDigitLiteral(char c) {
         return isDigit(c) || isDigitLiteralChar(c);
     }
 
-    private boolean isAComment() {
+    boolean isAComment() {
         int p = 0;
         while (p + 1 < line.length() && line.charAt(p + 1) == ' ') {
             if (line.charAt(p) == '!' || line.charAt(p) == 'c') {
