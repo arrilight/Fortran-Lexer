@@ -15,21 +15,6 @@ public class LexerTest {
     public LexerTest() throws IOException{
         testLexer = new Lexer();
     }
-    @Test
-    public void startLexicalAnalysis() throws Exception {
-        //more tests!!!
-
-    }
-
-    @Test
-    public void nextToken() throws Exception {
-
-    }
-
-    @Test
-    public void findKeywordOrIdentifier() throws Exception {
-
-    }
 
     @Test
     public void findCompositeKeyword() throws Exception {
@@ -47,21 +32,6 @@ public class LexerTest {
         assertEquals(testLexer.findOperator("(").getType(),TokenType.SEPARATOR);
         testLexer.pointer = 0;
         assertEquals(testLexer.findOperator("(").getValue(),"LEFT_PAREN");
-    }
-
-    @Test
-    public void findLeftParen() throws Exception {
-
-    }
-
-    @Test
-    public void findLogicalOperator() throws Exception {
-
-    }
-
-    @Test
-    public void findLiteral() throws Exception {
-
     }
 
     @Test
