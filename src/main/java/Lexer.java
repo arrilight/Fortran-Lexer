@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * This class is used to represent the lexer for FORTRAN 90/95 language.
@@ -26,21 +27,18 @@ public class Lexer {
     /**
      * Function that starts lexical analysis for a given line.
      */
-    void startLexicalAnalysis() throws IOException {
-        Reader reader = new Reader("in.txt");
-        Writer writer = new Writer("out.txt");
-        while ((line = reader.nextLine()) != null) {
-            lower = line.toLowerCase();
-            pointer = 0;
-            while (pointer < line.length() && line.length() > 5) {
-                Token token;
-                if ((token = nextToken()) != null) {
-                    writer.write(token);
-                }
-
+    ArrayList<Token> startLexicalAnalysis(String line) {
+        ArrayList<Token> tokens = new ArrayList<Token>();
+        this.line = line;
+        this.lower = this.line.toLowerCase();
+        pointer = 0;
+        while (pointer < line.length() && line.length() > 5) {
+            Token token;
+            if ((token = nextToken()) != null) {
+                tokens.add(token);
             }
-            writer.writeEmptyLine();
         }
+        return tokens;
 
     }
 

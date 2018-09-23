@@ -1,6 +1,7 @@
 import org.junit.Test;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
@@ -14,6 +15,15 @@ public class LexerTest {
     }
     @Test
     public void startLexicalAnalysis() throws Exception {
+        String line = "subroutine main";
+        Token token1 = new Token(TokenType.KEYWORD, "subroutine");
+        Token token2 = new Token(TokenType.IDENTIFIER, "main");
+        assertEquals(token1.getValue(), this.testLexer.startLexicalAnalysis(line).get(0).getValue());
+        assertEquals(token1.getType(), this.testLexer.startLexicalAnalysis(line).get(0).getType());
+        assertEquals(token2.getValue(), this.testLexer.startLexicalAnalysis(line).get(1).getValue());
+        assertEquals(token2.getType(), this.testLexer.startLexicalAnalysis(line).get(1).getType());
+        
+        //more tests!!!
 
     }
 
